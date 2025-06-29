@@ -1,0 +1,15 @@
+C:\Users\parmis\source\repos\office_automation_system\office_automation_system.application\bin\Debug\net9.0\office_automation_system.application.deps.json
+C:\Users\parmis\source\repos\office_automation_system\office_automation_system.application\bin\Debug\net9.0\office_automation_system.application.dll
+C:\Users\parmis\source\repos\office_automation_system\office_automation_system.application\bin\Debug\net9.0\office_automation_system.application.pdb
+C:\Users\parmis\source\repos\office_automation_system\office_automation_system.application\bin\Debug\net9.0\office_automation_system.domain.dll
+C:\Users\parmis\source\repos\office_automation_system\office_automation_system.application\bin\Debug\net9.0\office_automation_system.domain.pdb
+C:\Users\parmis\source\repos\office_automation_system\office_automation_system.application\obj\Debug\net9.0\office_automation_system.application.csproj.AssemblyReference.cache
+C:\Users\parmis\source\repos\office_automation_system\office_automation_system.application\obj\Debug\net9.0\office_automation_system.application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\parmis\source\repos\office_automation_system\office_automation_system.application\obj\Debug\net9.0\office_automation_system.application.AssemblyInfoInputs.cache
+C:\Users\parmis\source\repos\office_automation_system\office_automation_system.application\obj\Debug\net9.0\office_automation_system.application.AssemblyInfo.cs
+C:\Users\parmis\source\repos\office_automation_system\office_automation_system.application\obj\Debug\net9.0\office_automation_system.application.csproj.CoreCompileInputs.cache
+C:\Users\parmis\source\repos\office_automation_system\office_automation_system.application\obj\Debug\net9.0\office_a.2DFCBBC7.Up2Date
+C:\Users\parmis\source\repos\office_automation_system\office_automation_system.application\obj\Debug\net9.0\office_automation_system.application.dll
+C:\Users\parmis\source\repos\office_automation_system\office_automation_system.application\obj\Debug\net9.0\refint\office_automation_system.application.dll
+C:\Users\parmis\source\repos\office_automation_system\office_automation_system.application\obj\Debug\net9.0\office_automation_system.application.pdb
+C:\Users\parmis\source\repos\office_automation_system\office_automation_system.application\obj\Debug\net9.0\ref\office_automation_system.application.dll

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\office_automation_system.Api.props" />
+</Project>

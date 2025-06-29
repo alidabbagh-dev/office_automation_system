@@ -1,0 +1,9 @@
+# Visual Studio folder
+.vs/
+# User-specific files
+*.user
+*.suo
+
+# Build results
+bin/
+obj/

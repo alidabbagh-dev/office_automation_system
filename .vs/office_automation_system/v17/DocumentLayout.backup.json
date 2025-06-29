@@ -1,0 +1,1725 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4EA12397-08BC-46CA-BB63-6E5DB88B5741}|office_automation_system.domain\\office_automation_system.domain.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.domain\\enums\\requeststatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EA12397-08BC-46CA-BB63-6E5DB88B5741}|office_automation_system.domain\\office_automation_system.domain.csproj|solutionrelative:office_automation_system.domain\\enums\\requeststatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.infrastructure\\services\\requeststep\\requeststepgenericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|solutionrelative:office_automation_system.infrastructure\\services\\requeststep\\requeststepgenericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.infrastructure\\services\\request\\requestgenericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|solutionrelative:office_automation_system.infrastructure\\services\\request\\requestgenericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72691D2B-359D-4FEB-A736-02EF592941B9}|office_automation_system.Api\\office_automation_system.Api.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.api\\controllers\\admin\\requeststep\\requeststepcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72691D2B-359D-4FEB-A736-02EF592941B9}|office_automation_system.Api\\office_automation_system.Api.csproj|solutionrelative:office_automation_system.api\\controllers\\admin\\requeststep\\requeststepcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\dto\\request\\editrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\dto\\request\\editrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\dto\\request\\createrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\dto\\request\\createrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\dto\\requeststep\\editrequeststepdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\dto\\requeststep\\editrequeststepdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\dto\\processapprovalstep\\createprocessapprovalstepdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\dto\\processapprovalstep\\createprocessapprovalstepdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\dto\\administrativeprocess\\createadministrativeprocessdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\dto\\administrativeprocess\\createadministrativeprocessdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.infrastructure\\services\\applicationuser\\applicationusergenericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|solutionrelative:office_automation_system.infrastructure\\services\\applicationuser\\applicationusergenericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72691D2B-359D-4FEB-A736-02EF592941B9}|office_automation_system.Api\\office_automation_system.Api.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72691D2B-359D-4FEB-A736-02EF592941B9}|office_automation_system.Api\\office_automation_system.Api.csproj|solutionrelative:office_automation_system.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FFC5BB1-EF97-4D05-A1D8-21317EFF129C}|office_automation_system\\office_automation_system.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FFC5BB1-EF97-4D05-A1D8-21317EFF129C}|office_automation_system\\office_automation_system.csproj|solutionrelative:office_automation_system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.infrastructure\\services\\role\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|solutionrelative:office_automation_system.infrastructure\\services\\role\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.infrastructure\\services\\requeststepfile\\requeststepfilegenericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|solutionrelative:office_automation_system.infrastructure\\services\\requeststepfile\\requeststepfilegenericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.infrastructure\\services\\processapprovalstep\\processapprovalstepgenericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|solutionrelative:office_automation_system.infrastructure\\services\\processapprovalstep\\processapprovalstepgenericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.infrastructure\\services\\notification\\notificationgenericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|solutionrelative:office_automation_system.infrastructure\\services\\notification\\notificationgenericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.infrastructure\\services\\filemanager\\filemanagergenericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|solutionrelative:office_automation_system.infrastructure\\services\\filemanager\\filemanagergenericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.infrastructure\\services\\auth\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|solutionrelative:office_automation_system.infrastructure\\services\\auth\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.infrastructure\\services\\administrativeprocess\\administrativeprocessgenericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|solutionrelative:office_automation_system.infrastructure\\services\\administrativeprocess\\administrativeprocessgenericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.infrastructure\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|solutionrelative:office_automation_system.infrastructure\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.infrastructure\\repositories\\requeststeprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|solutionrelative:office_automation_system.infrastructure\\repositories\\requeststeprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.infrastructure\\repositories\\requeststepfilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|solutionrelative:office_automation_system.infrastructure\\repositories\\requeststepfilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.infrastructure\\repositories\\requestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|solutionrelative:office_automation_system.infrastructure\\repositories\\requestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.infrastructure\\repositories\\processapprovalsteprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|solutionrelative:office_automation_system.infrastructure\\repositories\\processapprovalsteprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.infrastructure\\repositories\\notificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|solutionrelative:office_automation_system.infrastructure\\repositories\\notificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.infrastructure\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|solutionrelative:office_automation_system.infrastructure\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.infrastructure\\repositories\\applicationuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|solutionrelative:office_automation_system.infrastructure\\repositories\\applicationuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.infrastructure\\repositories\\administrativeprocessrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|solutionrelative:office_automation_system.infrastructure\\repositories\\administrativeprocessrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.infrastructure\\identity\\seed\\adminuserseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|solutionrelative:office_automation_system.infrastructure\\identity\\seed\\adminuserseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.infrastructure\\data\\applicationdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|solutionrelative:office_automation_system.infrastructure\\data\\applicationdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|solutionrelative:office_automation_system.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\contracts\\unitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\contracts\\unitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\contracts\\services\\applicationuser\\iapplicationusergenericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\contracts\\services\\applicationuser\\iapplicationusergenericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\contracts\\services\\auth\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\contracts\\services\\auth\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\contracts\\services\\administrativeprocess\\iadministrativeprocessgenericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\contracts\\services\\administrativeprocess\\iadministrativeprocessgenericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\contracts\\repositories\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\contracts\\repositories\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\contracts\\repositories\\iadministrativeprocessrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\contracts\\repositories\\iadministrativeprocessrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72691D2B-359D-4FEB-A736-02EF592941B9}|office_automation_system.Api\\office_automation_system.Api.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.api\\middleware\\generalmiddlewares\\checkuserlockoutmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72691D2B-359D-4FEB-A736-02EF592941B9}|office_automation_system.Api\\office_automation_system.Api.csproj|solutionrelative:office_automation_system.api\\middleware\\generalmiddlewares\\checkuserlockoutmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72691D2B-359D-4FEB-A736-02EF592941B9}|office_automation_system.Api\\office_automation_system.Api.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.api\\controllers\\user\\administrativeprocess\\administrativeprocesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72691D2B-359D-4FEB-A736-02EF592941B9}|office_automation_system.Api\\office_automation_system.Api.csproj|solutionrelative:office_automation_system.api\\controllers\\user\\administrativeprocess\\administrativeprocesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72691D2B-359D-4FEB-A736-02EF592941B9}|office_automation_system.Api\\office_automation_system.Api.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.api\\controllers\\auth\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72691D2B-359D-4FEB-A736-02EF592941B9}|office_automation_system.Api\\office_automation_system.Api.csproj|solutionrelative:office_automation_system.api\\controllers\\auth\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72691D2B-359D-4FEB-A736-02EF592941B9}|office_automation_system.Api\\office_automation_system.Api.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.api\\controllers\\admin\\role\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72691D2B-359D-4FEB-A736-02EF592941B9}|office_automation_system.Api\\office_automation_system.Api.csproj|solutionrelative:office_automation_system.api\\controllers\\admin\\role\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72691D2B-359D-4FEB-A736-02EF592941B9}|office_automation_system.Api\\office_automation_system.Api.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.api\\controllers\\admin\\request\\requestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72691D2B-359D-4FEB-A736-02EF592941B9}|office_automation_system.Api\\office_automation_system.Api.csproj|solutionrelative:office_automation_system.api\\controllers\\admin\\request\\requestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72691D2B-359D-4FEB-A736-02EF592941B9}|office_automation_system.Api\\office_automation_system.Api.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.api\\controllers\\admin\\processapprovalstep\\processapprovalstepcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72691D2B-359D-4FEB-A736-02EF592941B9}|office_automation_system.Api\\office_automation_system.Api.csproj|solutionrelative:office_automation_system.api\\controllers\\admin\\processapprovalstep\\processapprovalstepcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72691D2B-359D-4FEB-A736-02EF592941B9}|office_automation_system.Api\\office_automation_system.Api.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.api\\controllers\\admin\\applicationuser\\applicationusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72691D2B-359D-4FEB-A736-02EF592941B9}|office_automation_system.Api\\office_automation_system.Api.csproj|solutionrelative:office_automation_system.api\\controllers\\admin\\applicationuser\\applicationusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72691D2B-359D-4FEB-A736-02EF592941B9}|office_automation_system.Api\\office_automation_system.Api.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.api\\controllers\\admin\\administrativeprocess\\administrativeprocesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72691D2B-359D-4FEB-A736-02EF592941B9}|office_automation_system.Api\\office_automation_system.Api.csproj|solutionrelative:office_automation_system.api\\controllers\\admin\\administrativeprocess\\administrativeprocesscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FFC5BB1-EF97-4D05-A1D8-21317EFF129C}|office_automation_system\\office_automation_system.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FFC5BB1-EF97-4D05-A1D8-21317EFF129C}|office_automation_system\\office_automation_system.csproj|solutionrelative:office_automation_system\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\contracts\\services\\requeststep\\irequeststepgenericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\contracts\\services\\requeststep\\irequeststepgenericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\dto\\requeststep\\getrequeststepdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\dto\\requeststep\\getrequeststepdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EA12397-08BC-46CA-BB63-6E5DB88B5741}|office_automation_system.domain\\office_automation_system.domain.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.domain\\entities\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EA12397-08BC-46CA-BB63-6E5DB88B5741}|office_automation_system.domain\\office_automation_system.domain.csproj|solutionrelative:office_automation_system.domain\\entities\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EA12397-08BC-46CA-BB63-6E5DB88B5741}|office_automation_system.domain\\office_automation_system.domain.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.domain\\enums\\requestpriority.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EA12397-08BC-46CA-BB63-6E5DB88B5741}|office_automation_system.domain\\office_automation_system.domain.csproj|solutionrelative:office_automation_system.domain\\enums\\requestpriority.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72691D2B-359D-4FEB-A736-02EF592941B9}|office_automation_system.Api\\office_automation_system.Api.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.api\\office_automation_system.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{72691D2B-359D-4FEB-A736-02EF592941B9}|office_automation_system.Api\\office_automation_system.Api.csproj|solutionrelative:office_automation_system.api\\office_automation_system.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\dto\\requeststep\\requeststepfilterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\dto\\requeststep\\requeststepfilterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\dto\\requeststep\\createrequeststepdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\dto\\requeststep\\createrequeststepdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\contracts\\services\\request\\irequestgenericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\contracts\\services\\request\\irequestgenericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EA12397-08BC-46CA-BB63-6E5DB88B5741}|office_automation_system.domain\\office_automation_system.domain.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.domain\\entities\\requeststep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EA12397-08BC-46CA-BB63-6E5DB88B5741}|office_automation_system.domain\\office_automation_system.domain.csproj|solutionrelative:office_automation_system.domain\\entities\\requeststep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EA12397-08BC-46CA-BB63-6E5DB88B5741}|office_automation_system.domain\\office_automation_system.domain.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.domain\\entities\\processapprovalstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EA12397-08BC-46CA-BB63-6E5DB88B5741}|office_automation_system.domain\\office_automation_system.domain.csproj|solutionrelative:office_automation_system.domain\\entities\\processapprovalstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\dto\\request\\requestfilterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\dto\\request\\requestfilterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\dto\\applicationuser\\applicationuserfilterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\dto\\applicationuser\\applicationuserfilterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\dto\\applicationuser\\createapplicationuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\dto\\applicationuser\\createapplicationuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EA12397-08BC-46CA-BB63-6E5DB88B5741}|office_automation_system.domain\\office_automation_system.domain.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.domain\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EA12397-08BC-46CA-BB63-6E5DB88B5741}|office_automation_system.domain\\office_automation_system.domain.csproj|solutionrelative:office_automation_system.domain\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\dto\\processapprovalstep\\getprocessapprovalstepdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\dto\\processapprovalstep\\getprocessapprovalstepdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\dto\\processapprovalstep\\editprocessapprovalstepdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\dto\\processapprovalstep\\editprocessapprovalstepdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\contracts\\services\\processapprovalstep\\iprocessapprovalstepgenericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\contracts\\services\\processapprovalstep\\iprocessapprovalstepgenericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72691D2B-359D-4FEB-A736-02EF592941B9}|office_automation_system.Api\\office_automation_system.Api.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.api\\office_automation_system.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{72691D2B-359D-4FEB-A736-02EF592941B9}|office_automation_system.Api\\office_automation_system.Api.csproj|solutionrelative:office_automation_system.api\\office_automation_system.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72691D2B-359D-4FEB-A736-02EF592941B9}|office_automation_system.Api\\office_automation_system.Api.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{72691D2B-359D-4FEB-A736-02EF592941B9}|office_automation_system.Api\\office_automation_system.Api.csproj|solutionrelative:office_automation_system.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FFC5BB1-EF97-4D05-A1D8-21317EFF129C}|office_automation_system\\office_automation_system.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system\\office_automation_system.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7FFC5BB1-EF97-4D05-A1D8-21317EFF129C}|office_automation_system\\office_automation_system.csproj|solutionrelative:office_automation_system\\office_automation_system.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EA12397-08BC-46CA-BB63-6E5DB88B5741}|office_automation_system.domain\\office_automation_system.domain.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.domain\\entities\\administrativeprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EA12397-08BC-46CA-BB63-6E5DB88B5741}|office_automation_system.domain\\office_automation_system.domain.csproj|solutionrelative:office_automation_system.domain\\entities\\administrativeprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\dto\\auth\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\dto\\auth\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EA12397-08BC-46CA-BB63-6E5DB88B5741}|office_automation_system.domain\\office_automation_system.domain.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.domain\\entities\\requeststepfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EA12397-08BC-46CA-BB63-6E5DB88B5741}|office_automation_system.domain\\office_automation_system.domain.csproj|solutionrelative:office_automation_system.domain\\entities\\requeststepfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\dto\\applicationuser\\getapplicationuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\dto\\applicationuser\\getapplicationuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\dto\\applicationuser\\editapplicationuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\dto\\applicationuser\\editapplicationuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\contracts\\services\\role\\iroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\contracts\\services\\role\\iroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\dto\\role\\assignroledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\dto\\role\\assignroledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\dto\\role\\createroledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\dto\\role\\createroledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FFC5BB1-EF97-4D05-A1D8-21317EFF129C}|office_automation_system\\office_automation_system.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7FFC5BB1-EF97-4D05-A1D8-21317EFF129C}|office_automation_system\\office_automation_system.csproj|solutionrelative:office_automation_system\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.infrastructure\\identity\\seed\\roleseedercs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|solutionrelative:office_automation_system.infrastructure\\identity\\seed\\roleseedercs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EA12397-08BC-46CA-BB63-6E5DB88B5741}|office_automation_system.domain\\office_automation_system.domain.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.domain\\enums\\systemstaticroles\\systemstaticroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EA12397-08BC-46CA-BB63-6E5DB88B5741}|office_automation_system.domain\\office_automation_system.domain.csproj|solutionrelative:office_automation_system.domain\\enums\\systemstaticroles\\systemstaticroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\dto\\auth\\refreshtokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\dto\\auth\\refreshtokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\dto\\auth\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\dto\\auth\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\contracts\\repositories\\iapplicationuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\contracts\\repositories\\iapplicationuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\dto\\auth\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\dto\\auth\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.infrastructure\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|solutionrelative:office_automation_system.infrastructure\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\dto\\requeststepfile\\getrequeststepfiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\dto\\requeststepfile\\getrequeststepfiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\dto\\request\\getrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\dto\\request\\getrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\dto\\notification\\getnotificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\dto\\notification\\getnotificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\dto\\administrativeprocess\\getadministrativeprocessdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\dto\\administrativeprocess\\getadministrativeprocessdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EA12397-08BC-46CA-BB63-6E5DB88B5741}|office_automation_system.domain\\office_automation_system.domain.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.domain\\entities\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EA12397-08BC-46CA-BB63-6E5DB88B5741}|office_automation_system.domain\\office_automation_system.domain.csproj|solutionrelative:office_automation_system.domain\\entities\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\dto\\requeststepfile\\createrequeststepfiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\dto\\requeststepfile\\createrequeststepfiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\contracts\\services\\filemanager\\ifilemanagergenericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\contracts\\services\\filemanager\\ifilemanagergenericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\contracts\\services\\notification\\inotificationgenericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\contracts\\services\\notification\\inotificationgenericservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\contracts\\repositories\\irequeststepfilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\contracts\\repositories\\irequeststepfilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\contracts\\repositories\\iprocessapprovalsteprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\contracts\\repositories\\iprocessapprovalsteprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\dto\\requeststepfile\\editrequeststepfiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\dto\\requeststepfile\\editrequeststepfiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\dto\\notification\\editnotificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\dto\\notification\\editnotificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\dto\\notification\\createnotificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\dto\\notification\\createnotificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\dto\\administrativeprocess\\editadministrativeprocessdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\dto\\administrativeprocess\\editadministrativeprocessdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EA12397-08BC-46CA-BB63-6E5DB88B5741}|office_automation_system.domain\\office_automation_system.domain.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.domain\\entities\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EA12397-08BC-46CA-BB63-6E5DB88B5741}|office_automation_system.domain\\office_automation_system.domain.csproj|solutionrelative:office_automation_system.domain\\entities\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\contracts\\repositories\\irequeststeprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\contracts\\repositories\\irequeststeprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\contracts\\repositories\\irequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\contracts\\repositories\\irequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\contracts\\repositories\\inotificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3588E73-1D27-4F25-AC28-CAD57BB334F9}|office_automation_system.application\\office_automation_system.application.csproj|solutionrelative:office_automation_system.application\\contracts\\repositories\\inotificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|c:\\users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.infrastructure\\migrations\\20250611153141_tables created.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41201466-9554-4E8C-A9B9-5A8DD9D31248}|office_automation_system.Infrastructure\\office_automation_system.Infrastructure.csproj|solutionrelative:office_automation_system.infrastructure\\migrations\\20250611153141_tables created.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "AdministrativeProcessController.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Api\\Controllers\\Admin\\AdministrativeProcess\\AdministrativeProcessController.cs",
+              "RelativeDocumentMoniker": "office_automation_system.Api\\Controllers\\Admin\\AdministrativeProcess\\AdministrativeProcessController.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Api\\Controllers\\Admin\\AdministrativeProcess\\AdministrativeProcessController.cs",
+              "RelativeToolTip": "office_automation_system.Api\\Controllers\\Admin\\AdministrativeProcess\\AdministrativeProcessController.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAswGMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T15:43:39.975Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RequestStepGenericService.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Services\\RequestStep\\RequestStepGenericService.cs",
+              "RelativeDocumentMoniker": "office_automation_system.Infrastructure\\Services\\RequestStep\\RequestStepGenericService.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Services\\RequestStep\\RequestStepGenericService.cs",
+              "RelativeToolTip": "office_automation_system.Infrastructure\\Services\\RequestStep\\RequestStepGenericService.cs",
+              "ViewState": "AgIAAEkBAAAAAAAAAAAAAE8BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T11:48:59.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RequestStatus.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.domain\\Enums\\RequestStatus.cs",
+              "RelativeDocumentMoniker": "office_automation_system.domain\\Enums\\RequestStatus.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.domain\\Enums\\RequestStatus.cs",
+              "RelativeToolTip": "office_automation_system.domain\\Enums\\RequestStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T15:21:58.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RequestGenericService.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Services\\Request\\RequestGenericService.cs",
+              "RelativeDocumentMoniker": "office_automation_system.Infrastructure\\Services\\Request\\RequestGenericService.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Services\\Request\\RequestGenericService.cs",
+              "RelativeToolTip": "office_automation_system.Infrastructure\\Services\\Request\\RequestGenericService.cs",
+              "ViewState": "AgIAAN4AAAAAAAAAAAAgwC4AAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T11:46:53.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RequestStepController.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Api\\Controllers\\Admin\\RequestStep\\RequestStepController.cs",
+              "RelativeDocumentMoniker": "office_automation_system.Api\\Controllers\\Admin\\RequestStep\\RequestStepController.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Api\\Controllers\\Admin\\RequestStep\\RequestStepController.cs",
+              "RelativeToolTip": "office_automation_system.Api\\Controllers\\Admin\\RequestStep\\RequestStepController.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAqwFAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T17:42:01.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EditRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\Request\\EditRequestDto.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Dto\\Request\\EditRequestDto.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\Request\\EditRequestDto.cs",
+              "RelativeToolTip": "office_automation_system.application\\Dto\\Request\\EditRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T15:08:45.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CreateRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\Request\\CreateRequestDto.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Dto\\Request\\CreateRequestDto.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\Request\\CreateRequestDto.cs",
+              "RelativeToolTip": "office_automation_system.application\\Dto\\Request\\CreateRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T15:08:04.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EditRequestStepDto.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\RequestStep\\EditRequestStepDto.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Dto\\RequestStep\\EditRequestStepDto.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\RequestStep\\EditRequestStepDto.cs",
+              "RelativeToolTip": "office_automation_system.application\\Dto\\RequestStep\\EditRequestStepDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T15:11:12.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CreateProcessApprovalStepDto.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\ProcessApprovalStep\\CreateProcessApprovalStepDto.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Dto\\ProcessApprovalStep\\CreateProcessApprovalStepDto.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\ProcessApprovalStep\\CreateProcessApprovalStepDto.cs",
+              "RelativeToolTip": "office_automation_system.application\\Dto\\ProcessApprovalStep\\CreateProcessApprovalStepDto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T15:05:48.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CreateAdministrativeProcessDto.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\AdministrativeProcess\\CreateAdministrativeProcessDto.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Dto\\AdministrativeProcess\\CreateAdministrativeProcessDto.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\AdministrativeProcess\\CreateAdministrativeProcessDto.cs",
+              "RelativeToolTip": "office_automation_system.application\\Dto\\AdministrativeProcess\\CreateAdministrativeProcessDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T14:47:24.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ApplicationUserGenericService.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Services\\ApplicationUser\\ApplicationUserGenericService.cs",
+              "RelativeDocumentMoniker": "office_automation_system.Infrastructure\\Services\\ApplicationUser\\ApplicationUserGenericService.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Services\\ApplicationUser\\ApplicationUserGenericService.cs",
+              "RelativeToolTip": "office_automation_system.Infrastructure\\Services\\ApplicationUser\\ApplicationUserGenericService.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAcwFwAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T17:24:12.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Api\\Program.cs",
+              "RelativeDocumentMoniker": "office_automation_system.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Api\\Program.cs",
+              "RelativeToolTip": "office_automation_system.Api\\Program.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAAAE0AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T15:34:23.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system\\Program.cs",
+              "RelativeDocumentMoniker": "office_automation_system\\Program.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system\\Program.cs",
+              "RelativeToolTip": "office_automation_system\\Program.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAD8AAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T15:32:28.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RoleService.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Services\\Role\\RoleService.cs",
+              "RelativeDocumentMoniker": "office_automation_system.Infrastructure\\Services\\Role\\RoleService.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Services\\Role\\RoleService.cs",
+              "RelativeToolTip": "office_automation_system.Infrastructure\\Services\\Role\\RoleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T17:44:39.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RequestStepFileGenericService.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Services\\RequestStepFile\\RequestStepFileGenericService.cs",
+              "RelativeDocumentMoniker": "office_automation_system.Infrastructure\\Services\\RequestStepFile\\RequestStepFileGenericService.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Services\\RequestStepFile\\RequestStepFileGenericService.cs",
+              "RelativeToolTip": "office_automation_system.Infrastructure\\Services\\RequestStepFile\\RequestStepFileGenericService.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAgwHsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T11:52:30.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProcessApprovalStepGenericService.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Services\\ProcessApprovalStep\\ProcessApprovalStepGenericService.cs",
+              "RelativeDocumentMoniker": "office_automation_system.Infrastructure\\Services\\ProcessApprovalStep\\ProcessApprovalStepGenericService.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Services\\ProcessApprovalStep\\ProcessApprovalStepGenericService.cs",
+              "RelativeToolTip": "office_automation_system.Infrastructure\\Services\\ProcessApprovalStep\\ProcessApprovalStepGenericService.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAkwEUAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T11:44:10.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "NotificationGenericService.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Services\\Notification\\NotificationGenericService.cs",
+              "RelativeDocumentMoniker": "office_automation_system.Infrastructure\\Services\\Notification\\NotificationGenericService.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Services\\Notification\\NotificationGenericService.cs",
+              "RelativeToolTip": "office_automation_system.Infrastructure\\Services\\Notification\\NotificationGenericService.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAAAGwAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T11:39:32.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FileManagerGenericService.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Services\\FileManager\\FileManagerGenericService.cs",
+              "RelativeDocumentMoniker": "office_automation_system.Infrastructure\\Services\\FileManager\\FileManagerGenericService.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Services\\FileManager\\FileManagerGenericService.cs",
+              "RelativeToolTip": "office_automation_system.Infrastructure\\Services\\FileManager\\FileManagerGenericService.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACcAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T15:08:12.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Services\\Auth\\AuthService.cs",
+              "RelativeDocumentMoniker": "office_automation_system.Infrastructure\\Services\\Auth\\AuthService.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Services\\Auth\\AuthService.cs",
+              "RelativeToolTip": "office_automation_system.Infrastructure\\Services\\Auth\\AuthService.cs",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAYwGIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T14:33:42.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AdministrativeProcessGenericService.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Services\\AdministrativeProcess\\AdministrativeProcessGenericService.cs",
+              "RelativeDocumentMoniker": "office_automation_system.Infrastructure\\Services\\AdministrativeProcess\\AdministrativeProcessGenericService.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Services\\AdministrativeProcess\\AdministrativeProcessGenericService.cs",
+              "RelativeToolTip": "office_automation_system.Infrastructure\\Services\\AdministrativeProcess\\AdministrativeProcessGenericService.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAYwG4AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T11:07:39.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\UnitOfWork\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "office_automation_system.Infrastructure\\UnitOfWork\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\UnitOfWork\\UnitOfWork.cs",
+              "RelativeToolTip": "office_automation_system.Infrastructure\\UnitOfWork\\UnitOfWork.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T18:23:50.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "RequestStepRepository.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Repositories\\RequestStepRepository.cs",
+              "RelativeDocumentMoniker": "office_automation_system.Infrastructure\\Repositories\\RequestStepRepository.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Repositories\\RequestStepRepository.cs",
+              "RelativeToolTip": "office_automation_system.Infrastructure\\Repositories\\RequestStepRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T18:21:10.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "RequestStepFileRepository.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Repositories\\RequestStepFileRepository.cs",
+              "RelativeDocumentMoniker": "office_automation_system.Infrastructure\\Repositories\\RequestStepFileRepository.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Repositories\\RequestStepFileRepository.cs",
+              "RelativeToolTip": "office_automation_system.Infrastructure\\Repositories\\RequestStepFileRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T18:19:56.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "RequestRepository.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Repositories\\RequestRepository.cs",
+              "RelativeDocumentMoniker": "office_automation_system.Infrastructure\\Repositories\\RequestRepository.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Repositories\\RequestRepository.cs",
+              "RelativeToolTip": "office_automation_system.Infrastructure\\Repositories\\RequestRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T18:18:39.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ProcessApprovalStepRepository.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Repositories\\ProcessApprovalStepRepository.cs",
+              "RelativeDocumentMoniker": "office_automation_system.Infrastructure\\Repositories\\ProcessApprovalStepRepository.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Repositories\\ProcessApprovalStepRepository.cs",
+              "RelativeToolTip": "office_automation_system.Infrastructure\\Repositories\\ProcessApprovalStepRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T18:17:20.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "NotificationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Repositories\\NotificationRepository.cs",
+              "RelativeDocumentMoniker": "office_automation_system.Infrastructure\\Repositories\\NotificationRepository.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Repositories\\NotificationRepository.cs",
+              "RelativeToolTip": "office_automation_system.Infrastructure\\Repositories\\NotificationRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T18:10:56.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Repositories\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "office_automation_system.Infrastructure\\Repositories\\GenericRepository.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Repositories\\GenericRepository.cs",
+              "RelativeToolTip": "office_automation_system.Infrastructure\\Repositories\\GenericRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T18:09:06.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ApplicationUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Repositories\\ApplicationUserRepository.cs",
+              "RelativeDocumentMoniker": "office_automation_system.Infrastructure\\Repositories\\ApplicationUserRepository.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Repositories\\ApplicationUserRepository.cs",
+              "RelativeToolTip": "office_automation_system.Infrastructure\\Repositories\\ApplicationUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T18:14:32.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AdministrativeProcessRepository.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Repositories\\AdministrativeProcessRepository.cs",
+              "RelativeDocumentMoniker": "office_automation_system.Infrastructure\\Repositories\\AdministrativeProcessRepository.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Repositories\\AdministrativeProcessRepository.cs",
+              "RelativeToolTip": "office_automation_system.Infrastructure\\Repositories\\AdministrativeProcessRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T18:12:44.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "AdminUserSeeder.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Identity\\Seed\\AdminUserSeeder.cs",
+              "RelativeDocumentMoniker": "office_automation_system.Infrastructure\\Identity\\Seed\\AdminUserSeeder.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Identity\\Seed\\AdminUserSeeder.cs",
+              "RelativeToolTip": "office_automation_system.Infrastructure\\Identity\\Seed\\AdminUserSeeder.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAADMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T15:33:07.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ApplicationDbContextFactory.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Data\\ApplicationDbContextFactory.cs",
+              "RelativeDocumentMoniker": "office_automation_system.Infrastructure\\Data\\ApplicationDbContextFactory.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Data\\ApplicationDbContextFactory.cs",
+              "RelativeToolTip": "office_automation_system.Infrastructure\\Data\\ApplicationDbContextFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T17:17:44.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "office_automation_system.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "office_automation_system.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAswFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T16:41:52.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Contracts\\UnitOfWork\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Contracts\\UnitOfWork\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Contracts\\UnitOfWork\\IUnitOfWork.cs",
+              "RelativeToolTip": "office_automation_system.application\\Contracts\\UnitOfWork\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T14:43:01.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "IApplicationUserGenericService.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Contracts\\Services\\ApplicationUser\\IApplicationUserGenericService.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Contracts\\Services\\ApplicationUser\\IApplicationUserGenericService.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Contracts\\Services\\ApplicationUser\\IApplicationUserGenericService.cs",
+              "RelativeToolTip": "office_automation_system.application\\Contracts\\Services\\ApplicationUser\\IApplicationUserGenericService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T14:22:09.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Contracts\\Services\\Auth\\IAuthService.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Contracts\\Services\\Auth\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Contracts\\Services\\Auth\\IAuthService.cs",
+              "RelativeToolTip": "office_automation_system.application\\Contracts\\Services\\Auth\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T14:22:08.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "IAdministrativeProcessRepository.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Contracts\\Repositories\\IAdministrativeProcessRepository.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Contracts\\Repositories\\IAdministrativeProcessRepository.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Contracts\\Repositories\\IAdministrativeProcessRepository.cs",
+              "RelativeToolTip": "office_automation_system.application\\Contracts\\Repositories\\IAdministrativeProcessRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T14:34:13.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Contracts\\Repositories\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Contracts\\Repositories\\IGenericRepository.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Contracts\\Repositories\\IGenericRepository.cs",
+              "RelativeToolTip": "office_automation_system.application\\Contracts\\Repositories\\IGenericRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T14:31:24.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "IAdministrativeProcessGenericService.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Contracts\\Services\\AdministrativeProcess\\IAdministrativeProcessGenericService.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Contracts\\Services\\AdministrativeProcess\\IAdministrativeProcessGenericService.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Contracts\\Services\\AdministrativeProcess\\IAdministrativeProcessGenericService.cs",
+              "RelativeToolTip": "office_automation_system.application\\Contracts\\Services\\AdministrativeProcess\\IAdministrativeProcessGenericService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T20:56:51.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "CheckUserLockoutMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Api\\Middleware\\GeneralMiddlewares\\CheckUserLockoutMiddleware.cs",
+              "RelativeDocumentMoniker": "office_automation_system.Api\\Middleware\\GeneralMiddlewares\\CheckUserLockoutMiddleware.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Api\\Middleware\\GeneralMiddlewares\\CheckUserLockoutMiddleware.cs",
+              "RelativeToolTip": "office_automation_system.Api\\Middleware\\GeneralMiddlewares\\CheckUserLockoutMiddleware.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T17:48:50.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "AdministrativeProcessController.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Api\\Controllers\\User\\AdministrativeProcess\\AdministrativeProcessController.cs",
+              "RelativeDocumentMoniker": "office_automation_system.Api\\Controllers\\User\\AdministrativeProcess\\AdministrativeProcessController.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Api\\Controllers\\User\\AdministrativeProcess\\AdministrativeProcessController.cs",
+              "RelativeToolTip": "office_automation_system.Api\\Controllers\\User\\AdministrativeProcess\\AdministrativeProcessController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T17:31:22.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Api\\Controllers\\Auth\\AuthController.cs",
+              "RelativeDocumentMoniker": "office_automation_system.Api\\Controllers\\Auth\\AuthController.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Api\\Controllers\\Auth\\AuthController.cs",
+              "RelativeToolTip": "office_automation_system.Api\\Controllers\\Auth\\AuthController.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T14:20:17.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "RoleController.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Api\\Controllers\\Admin\\Role\\RoleController.cs",
+              "RelativeDocumentMoniker": "office_automation_system.Api\\Controllers\\Admin\\Role\\RoleController.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Api\\Controllers\\Admin\\Role\\RoleController.cs",
+              "RelativeToolTip": "office_automation_system.Api\\Controllers\\Admin\\Role\\RoleController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAACYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T17:45:28.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "RequestController.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Api\\Controllers\\Admin\\Request\\RequestController.cs",
+              "RelativeDocumentMoniker": "office_automation_system.Api\\Controllers\\Admin\\Request\\RequestController.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Api\\Controllers\\Admin\\Request\\RequestController.cs",
+              "RelativeToolTip": "office_automation_system.Api\\Controllers\\Admin\\Request\\RequestController.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAYwFoAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T15:25:03.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "ProcessApprovalStepController.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Api\\Controllers\\Admin\\ProcessApprovalStep\\ProcessApprovalStepController.cs",
+              "RelativeDocumentMoniker": "office_automation_system.Api\\Controllers\\Admin\\ProcessApprovalStep\\ProcessApprovalStepController.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Api\\Controllers\\Admin\\ProcessApprovalStep\\ProcessApprovalStepController.cs",
+              "RelativeToolTip": "office_automation_system.Api\\Controllers\\Admin\\ProcessApprovalStep\\ProcessApprovalStepController.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAqwE4AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T14:16:46.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "office_automation_system\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "office_automation_system\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T15:24:05.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "ApplicationUserController.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Api\\Controllers\\Admin\\ApplicationUser\\ApplicationUserController.cs",
+              "RelativeDocumentMoniker": "office_automation_system.Api\\Controllers\\Admin\\ApplicationUser\\ApplicationUserController.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Api\\Controllers\\Admin\\ApplicationUser\\ApplicationUserController.cs",
+              "RelativeToolTip": "office_automation_system.Api\\Controllers\\Admin\\ApplicationUser\\ApplicationUserController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAiwHQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T17:47:33.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "IRequestStepGenericService.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Contracts\\Services\\RequestStep\\IRequestStepGenericService.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Contracts\\Services\\RequestStep\\IRequestStepGenericService.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Contracts\\Services\\RequestStep\\IRequestStepGenericService.cs",
+              "RelativeToolTip": "office_automation_system.application\\Contracts\\Services\\RequestStep\\IRequestStepGenericService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T19:07:05.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "GetRequestStepDto.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\RequestStep\\GetRequestStepDto.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Dto\\RequestStep\\GetRequestStepDto.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\RequestStep\\GetRequestStepDto.cs",
+              "RelativeToolTip": "office_automation_system.application\\Dto\\RequestStep\\GetRequestStepDto.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T15:11:48.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Request.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.domain\\Entities\\Request.cs",
+              "RelativeDocumentMoniker": "office_automation_system.domain\\Entities\\Request.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.domain\\Entities\\Request.cs",
+              "RelativeToolTip": "office_automation_system.domain\\Entities\\Request.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T18:00:40.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "RequestPriority.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.domain\\Enums\\RequestPriority.cs",
+              "RelativeDocumentMoniker": "office_automation_system.domain\\Enums\\RequestPriority.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.domain\\Enums\\RequestPriority.cs",
+              "RelativeToolTip": "office_automation_system.domain\\Enums\\RequestPriority.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T15:12:56.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "office_automation_system.Api.csproj",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Api\\office_automation_system.Api.csproj",
+              "RelativeDocumentMoniker": "office_automation_system.Api\\office_automation_system.Api.csproj",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Api\\office_automation_system.Api.csproj",
+              "RelativeToolTip": "office_automation_system.Api\\office_automation_system.Api.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-08T15:39:19.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "RequestStepFilterDto.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\RequestStep\\RequestStepFilterDto.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Dto\\RequestStep\\RequestStepFilterDto.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\RequestStep\\RequestStepFilterDto.cs",
+              "RelativeToolTip": "office_automation_system.application\\Dto\\RequestStep\\RequestStepFilterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T19:09:26.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "CreateRequestStepDto.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\RequestStep\\CreateRequestStepDto.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Dto\\RequestStep\\CreateRequestStepDto.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\RequestStep\\CreateRequestStepDto.cs",
+              "RelativeToolTip": "office_automation_system.application\\Dto\\RequestStep\\CreateRequestStepDto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwA0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T15:10:26.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "IRequestGenericService.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Contracts\\Services\\Request\\IRequestGenericService.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Contracts\\Services\\Request\\IRequestGenericService.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Contracts\\Services\\Request\\IRequestGenericService.cs",
+              "RelativeToolTip": "office_automation_system.application\\Contracts\\Services\\Request\\IRequestGenericService.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAADgvxUAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T19:04:08.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "RequestStep.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.domain\\Entities\\RequestStep.cs",
+              "RelativeDocumentMoniker": "office_automation_system.domain\\Entities\\RequestStep.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.domain\\Entities\\RequestStep.cs",
+              "RelativeToolTip": "office_automation_system.domain\\Entities\\RequestStep.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T18:03:00.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "ProcessApprovalStep.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.domain\\Entities\\ProcessApprovalStep.cs",
+              "RelativeDocumentMoniker": "office_automation_system.domain\\Entities\\ProcessApprovalStep.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.domain\\Entities\\ProcessApprovalStep.cs",
+              "RelativeToolTip": "office_automation_system.domain\\Entities\\ProcessApprovalStep.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T17:56:25.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "RequestFilterDto.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\Request\\RequestFilterDto.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Dto\\Request\\RequestFilterDto.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\Request\\RequestFilterDto.cs",
+              "RelativeToolTip": "office_automation_system.application\\Dto\\Request\\RequestFilterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T18:20:59.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Mapping\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Mapping\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Mapping\\MappingProfile.cs",
+              "RelativeToolTip": "office_automation_system.application\\Mapping\\MappingProfile.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAwD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T15:24:52.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "ApplicationUserFilterDto.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\ApplicationUser\\ApplicationUserFilterDto.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Dto\\ApplicationUser\\ApplicationUserFilterDto.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\ApplicationUser\\ApplicationUserFilterDto.cs",
+              "RelativeToolTip": "office_automation_system.application\\Dto\\ApplicationUser\\ApplicationUserFilterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T20:40:56.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "CreateApplicationUserDto.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\ApplicationUser\\CreateApplicationUserDto.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Dto\\ApplicationUser\\CreateApplicationUserDto.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\ApplicationUser\\CreateApplicationUserDto.cs",
+              "RelativeToolTip": "office_automation_system.application\\Dto\\ApplicationUser\\CreateApplicationUserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T15:15:00.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.domain\\Entities\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "office_automation_system.domain\\Entities\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.domain\\Entities\\ApplicationUser.cs",
+              "RelativeToolTip": "office_automation_system.domain\\Entities\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T14:20:15.855Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "GetProcessApprovalStepDto.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\ProcessApprovalStep\\GetProcessApprovalStepDto.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Dto\\ProcessApprovalStep\\GetProcessApprovalStepDto.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\ProcessApprovalStep\\GetProcessApprovalStepDto.cs",
+              "RelativeToolTip": "office_automation_system.application\\Dto\\ProcessApprovalStep\\GetProcessApprovalStepDto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T15:06:59.886Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "EditProcessApprovalStepDto.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\ProcessApprovalStep\\EditProcessApprovalStepDto.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Dto\\ProcessApprovalStep\\EditProcessApprovalStepDto.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\ProcessApprovalStep\\EditProcessApprovalStepDto.cs",
+              "RelativeToolTip": "office_automation_system.application\\Dto\\ProcessApprovalStep\\EditProcessApprovalStepDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T15:06:20.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "IProcessApprovalStepGenericService.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Contracts\\Services\\ProcessApprovalStep\\IProcessApprovalStepGenericService.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Contracts\\Services\\ProcessApprovalStep\\IProcessApprovalStepGenericService.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Contracts\\Services\\ProcessApprovalStep\\IProcessApprovalStepGenericService.cs",
+              "RelativeToolTip": "office_automation_system.application\\Contracts\\Services\\ProcessApprovalStep\\IProcessApprovalStepGenericService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T19:01:39.212Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "office_automation_system.Api.http",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Api\\office_automation_system.Api.http",
+              "RelativeDocumentMoniker": "office_automation_system.Api\\office_automation_system.Api.http",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Api\\office_automation_system.Api.http",
+              "RelativeToolTip": "office_automation_system.Api\\office_automation_system.Api.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-06-08T15:34:18.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 101,
+              "Title": "20250611153141_tables created.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Migrations\\20250611153141_tables created.cs",
+              "RelativeDocumentMoniker": "office_automation_system.Infrastructure\\Migrations\\20250611153141_tables created.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Migrations\\20250611153141_tables created.cs",
+              "RelativeToolTip": "office_automation_system.Infrastructure\\Migrations\\20250611153141_tables created.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T15:31:42.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "office_automation_system.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Api\\appsettings.json",
+              "RelativeToolTip": "office_automation_system.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-08T15:33:31.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "office_automation_system.csproj",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system\\office_automation_system.csproj",
+              "RelativeDocumentMoniker": "office_automation_system\\office_automation_system.csproj",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system\\office_automation_system.csproj",
+              "RelativeToolTip": "office_automation_system\\office_automation_system.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-07T17:26:10.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "AdministrativeProcess.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.domain\\Entities\\AdministrativeProcess.cs",
+              "RelativeDocumentMoniker": "office_automation_system.domain\\Entities\\AdministrativeProcess.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.domain\\Entities\\AdministrativeProcess.cs",
+              "RelativeToolTip": "office_automation_system.domain\\Entities\\AdministrativeProcess.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T17:54:47.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "AuthResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\Auth\\AuthResponseDto.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Dto\\Auth\\AuthResponseDto.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\Auth\\AuthResponseDto.cs",
+              "RelativeToolTip": "office_automation_system.application\\Dto\\Auth\\AuthResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T18:32:28.5Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "RequestStepFile.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.domain\\Entities\\RequestStepFile.cs",
+              "RelativeDocumentMoniker": "office_automation_system.domain\\Entities\\RequestStepFile.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.domain\\Entities\\RequestStepFile.cs",
+              "RelativeToolTip": "office_automation_system.domain\\Entities\\RequestStepFile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T18:07:18.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "GetApplicationUserDto.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\ApplicationUser\\GetApplicationUserDto.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Dto\\ApplicationUser\\GetApplicationUserDto.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\ApplicationUser\\GetApplicationUserDto.cs",
+              "RelativeToolTip": "office_automation_system.application\\Dto\\ApplicationUser\\GetApplicationUserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T15:15:58.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "EditApplicationUserDto.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\ApplicationUser\\EditApplicationUserDto.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Dto\\ApplicationUser\\EditApplicationUserDto.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\ApplicationUser\\EditApplicationUserDto.cs",
+              "RelativeToolTip": "office_automation_system.application\\Dto\\ApplicationUser\\EditApplicationUserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T15:15:35.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "IRoleService.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Contracts\\Services\\Role\\IRoleService.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Contracts\\Services\\Role\\IRoleService.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Contracts\\Services\\Role\\IRoleService.cs",
+              "RelativeToolTip": "office_automation_system.application\\Contracts\\Services\\Role\\IRoleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T17:43:53.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "AssignRoleDto.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\Role\\AssignRoleDto.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Dto\\Role\\AssignRoleDto.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\Role\\AssignRoleDto.cs",
+              "RelativeToolTip": "office_automation_system.application\\Dto\\Role\\AssignRoleDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T17:47:57.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "CreateRoleDto.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\Role\\CreateRoleDto.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Dto\\Role\\CreateRoleDto.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\Role\\CreateRoleDto.cs",
+              "RelativeToolTip": "office_automation_system.application\\Dto\\Role\\CreateRoleDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T17:53:41.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system\\appsettings.json",
+              "RelativeDocumentMoniker": "office_automation_system\\appsettings.json",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system\\appsettings.json",
+              "RelativeToolTip": "office_automation_system\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-07T17:18:38.154Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "RoleSeedercs.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Identity\\Seed\\RoleSeedercs.cs",
+              "RelativeDocumentMoniker": "office_automation_system.Infrastructure\\Identity\\Seed\\RoleSeedercs.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\Identity\\Seed\\RoleSeedercs.cs",
+              "RelativeToolTip": "office_automation_system.Infrastructure\\Identity\\Seed\\RoleSeedercs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T15:28:45.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "SystemStaticRoles.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.domain\\Enums\\SystemStaticRoles\\SystemStaticRoles.cs",
+              "RelativeDocumentMoniker": "office_automation_system.domain\\Enums\\SystemStaticRoles\\SystemStaticRoles.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.domain\\Enums\\SystemStaticRoles\\SystemStaticRoles.cs",
+              "RelativeToolTip": "office_automation_system.domain\\Enums\\SystemStaticRoles\\SystemStaticRoles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T15:27:02.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "RefreshTokenDto.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\Auth\\RefreshTokenDto.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Dto\\Auth\\RefreshTokenDto.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\Auth\\RefreshTokenDto.cs",
+              "RelativeToolTip": "office_automation_system.application\\Dto\\Auth\\RefreshTokenDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T11:28:40.211Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\Auth\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Dto\\Auth\\RegisterDto.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\Auth\\RegisterDto.cs",
+              "RelativeToolTip": "office_automation_system.application\\Dto\\Auth\\RegisterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T18:31:21.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "IApplicationUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Contracts\\Repositories\\IApplicationUserRepository.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Contracts\\Repositories\\IApplicationUserRepository.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Contracts\\Repositories\\IApplicationUserRepository.cs",
+              "RelativeToolTip": "office_automation_system.application\\Contracts\\Repositories\\IApplicationUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T14:39:37.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\Auth\\LoginDto.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Dto\\Auth\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\Auth\\LoginDto.cs",
+              "RelativeToolTip": "office_automation_system.application\\Dto\\Auth\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T18:32:01.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\appsettings.json",
+              "RelativeDocumentMoniker": "office_automation_system.Infrastructure\\appsettings.json",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.Infrastructure\\appsettings.json",
+              "RelativeToolTip": "office_automation_system.Infrastructure\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-07T17:19:53.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "GetRequestStepFileDto.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\RequestStepFile\\GetRequestStepFileDto.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Dto\\RequestStepFile\\GetRequestStepFileDto.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\RequestStepFile\\GetRequestStepFileDto.cs",
+              "RelativeToolTip": "office_automation_system.application\\Dto\\RequestStepFile\\GetRequestStepFileDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T15:13:59.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "GetRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\Request\\GetRequestDto.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Dto\\Request\\GetRequestDto.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\Request\\GetRequestDto.cs",
+              "RelativeToolTip": "office_automation_system.application\\Dto\\Request\\GetRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T15:09:13.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "GetNotificationDto.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\Notification\\GetNotificationDto.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Dto\\Notification\\GetNotificationDto.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\Notification\\GetNotificationDto.cs",
+              "RelativeToolTip": "office_automation_system.application\\Dto\\Notification\\GetNotificationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T15:05:07.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
+              "Title": "GetAdministrativeProcessDto.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\AdministrativeProcess\\GetAdministrativeProcessDto.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Dto\\AdministrativeProcess\\GetAdministrativeProcessDto.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\AdministrativeProcess\\GetAdministrativeProcessDto.cs",
+              "RelativeToolTip": "office_automation_system.application\\Dto\\AdministrativeProcess\\GetAdministrativeProcessDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T14:49:01.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 87,
+              "Title": "Notification.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.domain\\Entities\\Notification.cs",
+              "RelativeDocumentMoniker": "office_automation_system.domain\\Entities\\Notification.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.domain\\Entities\\Notification.cs",
+              "RelativeToolTip": "office_automation_system.domain\\Entities\\Notification.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T14:18:37.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 88,
+              "Title": "CreateRequestStepFileDto.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\RequestStepFile\\CreateRequestStepFileDto.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Dto\\RequestStepFile\\CreateRequestStepFileDto.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\RequestStepFile\\CreateRequestStepFileDto.cs",
+              "RelativeToolTip": "office_automation_system.application\\Dto\\RequestStepFile\\CreateRequestStepFileDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T15:12:40.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 89,
+              "Title": "IFileManagerGenericService.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Contracts\\Services\\FileManager\\IFileManagerGenericService.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Contracts\\Services\\FileManager\\IFileManagerGenericService.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Contracts\\Services\\FileManager\\IFileManagerGenericService.cs",
+              "RelativeToolTip": "office_automation_system.application\\Contracts\\Services\\FileManager\\IFileManagerGenericService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T11:56:32.842Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 90,
+              "Title": "INotificationGenericService.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Contracts\\Services\\Notification\\INotificationGenericService.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Contracts\\Services\\Notification\\INotificationGenericService.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Contracts\\Services\\Notification\\INotificationGenericService.cs",
+              "RelativeToolTip": "office_automation_system.application\\Contracts\\Services\\Notification\\INotificationGenericService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T18:58:26.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 91,
+              "Title": "IRequestStepFileRepository.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Contracts\\Repositories\\IRequestStepFileRepository.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Contracts\\Repositories\\IRequestStepFileRepository.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Contracts\\Repositories\\IRequestStepFileRepository.cs",
+              "RelativeToolTip": "office_automation_system.application\\Contracts\\Repositories\\IRequestStepFileRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T14:38:04.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 92,
+              "Title": "IProcessApprovalStepRepository.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Contracts\\Repositories\\IProcessApprovalStepRepository.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Contracts\\Repositories\\IProcessApprovalStepRepository.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Contracts\\Repositories\\IProcessApprovalStepRepository.cs",
+              "RelativeToolTip": "office_automation_system.application\\Contracts\\Repositories\\IProcessApprovalStepRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T14:35:23.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 93,
+              "Title": "EditRequestStepFileDto.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\RequestStepFile\\EditRequestStepFileDto.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Dto\\RequestStepFile\\EditRequestStepFileDto.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\RequestStepFile\\EditRequestStepFileDto.cs",
+              "RelativeToolTip": "office_automation_system.application\\Dto\\RequestStepFile\\EditRequestStepFileDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T15:13:18.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 94,
+              "Title": "EditNotificationDto.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\Notification\\EditNotificationDto.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Dto\\Notification\\EditNotificationDto.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\Notification\\EditNotificationDto.cs",
+              "RelativeToolTip": "office_automation_system.application\\Dto\\Notification\\EditNotificationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T15:04:38.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 95,
+              "Title": "CreateNotificationDto.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\Notification\\CreateNotificationDto.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Dto\\Notification\\CreateNotificationDto.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\Notification\\CreateNotificationDto.cs",
+              "RelativeToolTip": "office_automation_system.application\\Dto\\Notification\\CreateNotificationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T15:04:08.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 96,
+              "Title": "EditAdministrativeProcessDto.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\AdministrativeProcess\\EditAdministrativeProcessDto.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Dto\\AdministrativeProcess\\EditAdministrativeProcessDto.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Dto\\AdministrativeProcess\\EditAdministrativeProcessDto.cs",
+              "RelativeToolTip": "office_automation_system.application\\Dto\\AdministrativeProcess\\EditAdministrativeProcessDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T14:48:27.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 97,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.domain\\Entities\\Common\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "office_automation_system.domain\\Entities\\Common\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.domain\\Entities\\Common\\BaseEntity.cs",
+              "RelativeToolTip": "office_automation_system.domain\\Entities\\Common\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T18:09:50.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 99,
+              "Title": "IRequestRepository.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Contracts\\Repositories\\IRequestRepository.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Contracts\\Repositories\\IRequestRepository.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Contracts\\Repositories\\IRequestRepository.cs",
+              "RelativeToolTip": "office_automation_system.application\\Contracts\\Repositories\\IRequestRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T14:36:07.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 98,
+              "Title": "IRequestStepRepository.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Contracts\\Repositories\\IRequestStepRepository.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Contracts\\Repositories\\IRequestStepRepository.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Contracts\\Repositories\\IRequestStepRepository.cs",
+              "RelativeToolTip": "office_automation_system.application\\Contracts\\Repositories\\IRequestStepRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T14:37:09.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 100,
+              "Title": "INotificationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Contracts\\Repositories\\INotificationRepository.cs",
+              "RelativeDocumentMoniker": "office_automation_system.application\\Contracts\\Repositories\\INotificationRepository.cs",
+              "ToolTip": "C:\\Users\\parmis\\source\\repos\\office_automation_system\\office_automation_system.application\\Contracts\\Repositories\\INotificationRepository.cs",
+              "RelativeToolTip": "office_automation_system.application\\Contracts\\Repositories\\INotificationRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T14:33:22.63Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
