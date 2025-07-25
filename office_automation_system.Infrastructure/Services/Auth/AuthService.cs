@@ -5,6 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using office_automation_system.application.Contracts.Services.Auth;
 using office_automation_system.application.Dto.Auth;
+using office_automation_system.application.Validator.Auth;
 using office_automation_system.domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -13,22 +14,43 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
-
+using FluentValidation;
+using FluentValidation.Results;
 namespace office_automation_system.Infrastructure.Services.Auth
 {
     public class AuthService : IAuthService
     {
         private readonly UserManager<office_automation_system.domain.Entities.ApplicationUser> _userManager;
         private readonly IConfiguration _config;
+        private readonly RegisterDtoValidator _registerValidator;
+        private readonly LoginDtoValidator _loginValidator;
 
-        public AuthService(UserManager<office_automation_system.domain.Entities.ApplicationUser> userManager, IConfiguration config)
+        public AuthService(UserManager<office_automation_system.domain.Entities.ApplicationUser> userManager, IConfiguration config,
+            LoginDtoValidator loginValidator,
+            RegisterDtoValidator registerValidator)
         {
             _userManager = userManager;
             _config = config;
+            _loginValidator = loginValidator;
+            _registerValidator = registerValidator;
         }
 
         public async Task<AuthResponseDto?> RegisterAsync(RegisterDto dto)
         {
+            FluentValidation.Results.ValidationResult validation = await _registerValidator.ValidateAsync(dto);
+
+            if (!validation.IsValid)
+            {
+                var errorList = validation.Errors
+                    .Select(e => $"{e.PropertyName}: {e.ErrorMessage}")
+                    .ToList();
+
+                var authResponseDto = new AuthResponseDto();
+                authResponseDto.errors = errorList;
+                return authResponseDto;
+            }
+
+
             var user = new office_automation_system.domain.Entities.ApplicationUser { UserName = dto?.Email, Email = dto?.Email };
             var result = await _userManager.CreateAsync(user, dto?.Password);
             if (!result.Succeeded) {
@@ -45,6 +67,19 @@ namespace office_automation_system.Infrastructure.Services.Auth
 
         public async Task<AuthResponseDto?> LoginAsync(LoginDto dto)
         {
+            FluentValidation.Results.ValidationResult validation = await _loginValidator.ValidateAsync(dto);
+
+            if (!validation.IsValid)
+            {
+                var errorList = validation.Errors
+                    .Select(e => $"{e.PropertyName}: {e.ErrorMessage}")
+                    .ToList();
+
+                var authResponseDto = new AuthResponseDto();
+                authResponseDto.errors = errorList;
+                return authResponseDto;
+            }
+
             var user = await _userManager.FindByEmailAsync(dto.Email);
             if (user == null) {
                 var authResponseDto = new AuthResponseDto();

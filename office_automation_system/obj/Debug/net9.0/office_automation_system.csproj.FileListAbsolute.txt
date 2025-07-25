@@ -247,3 +247,5 @@ C:\Users\parmis\source\repos\office_automation_system\office_automation_system\o
 C:\Users\parmis\source\repos\office_automation_system\office_automation_system\obj\Debug\net9.0\office_automation_system.pdb
 C:\Users\parmis\source\repos\office_automation_system\office_automation_system\obj\Debug\net9.0\office_automation_system.genruntimeconfig.cache
 C:\Users\parmis\source\repos\office_automation_system\office_automation_system\obj\Debug\net9.0\ref\office_automation_system.dll
+C:\Users\parmis\source\repos\office_automation_system\office_automation_system\obj\Debug\net9.0\office_automation_system.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\parmis\source\repos\office_automation_system\office_automation_system\obj\Debug\net9.0\office_automation_system.sourcelink.json

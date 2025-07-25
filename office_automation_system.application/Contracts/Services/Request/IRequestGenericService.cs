@@ -11,10 +11,12 @@ namespace office_automation_system.application.Contracts.Services.Request
 {
     public interface IRequestGenericService
     {
+        Task<bool> IsUserAllowedToAccessRequest(Guid RequestId);
         Task<bool> CheckIsVerified(CreateRequestDto dto);//this method checks that can user edit it or not
         Task<(bool IsSuccess, List<string> Errors)> CreateAsync(CreateRequestDto dto);
         Task<(bool IsSuccess, List<string> Errors)> EditAsync(Guid id, EditRequestDto dto);
         Task<List<GetRequestDto>> GetAllAsync();
+        Task<List<GetRequestDto>> GetUserRelatedRequestsAsync();
         Task<GetRequestDto?> GetByIdAsync(Guid id);
         Task<List<GetRequestDto>> FindAsync(Expression<Func<office_automation_system.domain.Entities.Request, bool>> predicate);
 

@@ -8,7 +8,7 @@ using office_automation_system.application.Dto.RequestStep;
 using office_automation_system.domain.Enums;
 using office_automation_system.Infrastructure.Services.Request;
 
-namespace office_automation_system.Api.Controllers.Admin.Request
+namespace office_automation_system.Api.Controllers.Admin.RequestStep
 {
     [Route("api/admin/[controller]")]
     [ApiController]
@@ -25,33 +25,53 @@ namespace office_automation_system.Api.Controllers.Admin.Request
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var result = await _RequestStepGenericService.GetAllAsync();
-            return Ok(result);
+            try
+            {
+                var result = await _RequestStepGenericService.GetAllAsync();
+                return Ok(result);
+            }
+            catch (Exception ex) {
+                return StatusCode(500, ex.Message);
+            }
+            
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(Guid id)
         {
-            var result = await _RequestStepGenericService.GetByIdAsync(id);
-            if (result == null)
-                return NotFound("Request Step not found");
-            return Ok(result);
+            try
+            {
+                var result = await _RequestStepGenericService.GetByIdAsync(id);
+                if (result == null)
+                    return NotFound("Request Step not found");
+                return Ok(result);
+            }
+            catch (Exception ex) {
+                return StatusCode(500, ex.Message);
+            }
+            
         }
 
 
         [HttpGet("filter")]
         public async Task<IActionResult> Filter([FromQuery] RequestStepFilterDto filter)
         {
-
-            var result = await _RequestStepGenericService.FindAsync(p =>
+            try
+            {
+                var result = await _RequestStepGenericService.FindAsync(p =>
                 p.IsDeleted == false &&
                 (filter.RequestId == null || p.RequestId == filter.RequestId) &&
                 (filter.OwnerId == null || p.OwnerId == filter.OwnerId) &&
                 (filter.RoleId == null || p.RoleId == filter.RoleId) &&
-                (filter.Title == null || p.Title == filter.Title)
+                (filter.Title == null || p.Title.Contains(filter.Title))
             );
 
-            return Ok(result);
+                return Ok(result);
+            }
+            catch (Exception ex) { 
+                return StatusCode(500,ex.Message);
+            }
+            
         }
 
 
@@ -60,20 +80,34 @@ namespace office_automation_system.Api.Controllers.Admin.Request
         [HttpPut("{id}")]
         public async Task<IActionResult> Edit(Guid id, [FromBody] EditRequestStepDto dto)
         {
-            var (success, errors) = await _RequestStepGenericService.EditAsync(id, dto);
-            if (!success)
-                return BadRequest(errors);
-            return Ok("Request step updated successfully");
+            try
+            {
+                var (success, errors) = await _RequestStepGenericService.EditAsync(id, dto);
+                if (!success)
+                    return BadRequest(errors);
+                return Ok("Request step updated successfully");
+            }
+            catch (Exception ex) { 
+                return StatusCode(500,ex.Message);
+            }
+            
         }
 
         [HttpPatch("referback/{RequestStepId}")]
         public async Task<IActionResult> ReferToPreviousStep(Guid RequestStepId)
         {
-            var (success,errors) = await _RequestStepGenericService.ReferToPreviousStep(RequestStepId);
-            if(!success)
-                return BadRequest(errors);
+            try
+            {
+                var (success, errors) = await _RequestStepGenericService.ReferToPreviousStep(RequestStepId);
+                if (!success)
+                    return BadRequest(errors);
 
-            return Ok("Request Step referred back successfully");
+                return Ok("Request Step referred back successfully");
+            }
+            catch (Exception ex) {
+                return StatusCode(500, ex.Message);
+            }
+            
 
         }
 
@@ -81,22 +115,36 @@ namespace office_automation_system.Api.Controllers.Admin.Request
         [HttpPatch("refernext/{RequestStepId}")]
         public async Task<IActionResult> ReferToNextStep(Guid RequestStepId)
         {
-            var (success, errors) = await _RequestStepGenericService.ReferToNextStep(RequestStepId);
-            if (!success)
-                return BadRequest(errors);
+            try
+            {
+                var (success, errors) = await _RequestStepGenericService.ReferToNextStep(RequestStepId);
+                if (!success)
+                    return BadRequest(errors);
 
-            return Ok("Request Step referred to the next step successfully");
+                return Ok("Request Step referred to the next step successfully");
+            }
+            catch (Exception ex) {
+                return StatusCode(500, ex.Message);
+            }
+            
 
         }
 
         [HttpPatch("confirm-final-step/{RequestStepId}")]
         public async Task<IActionResult> ConfirmFinalStep(Guid RequestStepId)
         {
-            var (success, errors) = await _RequestStepGenericService.ConfirmFinalStep(RequestStepId);
-            if (!success)
-                return BadRequest(errors);
+            try
+            {
+                var (success, errors) = await _RequestStepGenericService.ConfirmFinalStep(RequestStepId);
+                if (!success)
+                    return BadRequest(errors);
 
-            return Ok("Final Request Step Confirmed successfully");
+                return Ok("Final Request Step Confirmed successfully");
+            }
+            catch (Exception ex) {
+                return StatusCode(500, ex.Message);
+            }
+            
 
         }
 

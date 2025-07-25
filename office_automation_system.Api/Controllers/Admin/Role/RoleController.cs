@@ -22,18 +22,32 @@ namespace office_automation_system.Api.Controllers.Admin.Role
         [HttpPost]
         public async Task<IActionResult> CreateRole([FromBody] CreateRoleDto dto)
         {
-            var result = await _roleService.CreateAsync(dto);
-            if (!result.IsSuccess)
-                return BadRequest(new { message = "Failed to create role", errors = result.Errors });
+            try
+            {
+                var result = await _roleService.CreateAsync(dto);
+                if (!result.IsSuccess)
+                    return BadRequest(result.Errors);
 
-            return Ok(new { message = "Role created successfully" });
+                return Ok("Role Created Successfully");
+            }
+            catch (Exception ex) { 
+                return StatusCode(500,ex.Message);
+            }
+            
         }
 
         [HttpGet]
         public async Task<IActionResult> GetRoles()
         {
-            var roles = await _roleService.GetAllAsync();
-            return Ok(new { roles });
+            try
+            {
+                var roles = await _roleService.GetAllAsync();
+                return Ok(new { roles });
+            }
+            catch (Exception ex) { 
+                return StatusCode(500,ex.Message);
+            }
+            
         }
 
      

@@ -1,5 +1,7 @@
+using FluentValidation;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using office_automation_system.Api.Middleware.GeneralMiddlewares;
@@ -15,6 +17,15 @@ using office_automation_system.application.Contracts.Services.RequestStepFile;
 using office_automation_system.application.Contracts.Services.Role;
 using office_automation_system.application.Contracts.UnitOfWork;
 using office_automation_system.application.Mapping;
+using office_automation_system.application.Validator.AdministrativeProcess;
+using office_automation_system.application.Validator.ApplicationUser;
+using office_automation_system.application.Validator.Auth;
+using office_automation_system.application.Validator.Notification;
+using office_automation_system.application.Validator.ProcessApprovalStep;
+using office_automation_system.application.Validator.Request;
+using office_automation_system.application.Validator.RequestStep;
+using office_automation_system.application.Validator.RequestStepFile;
+using office_automation_system.application.Validator.Role;
 using office_automation_system.domain.Entities;
 using office_automation_system.Infrastructure.Data;
 using office_automation_system.Infrastructure.Identity.Seed;
@@ -37,6 +48,11 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+
+builder.Services.Configure<ApiBehaviorOptions>(options =>
+{
+    options.SuppressModelStateInvalidFilter = true;
+});
 builder.Services.AddOpenApi();
 
 
@@ -78,6 +94,26 @@ builder.Services.AddAuthorization();
 builder.Services.AddHttpContextAccessor();
 //UnitOfWork
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+//validators
+builder.Services.AddValidatorsFromAssemblyContaining<CreateAdministrativeProcessDtoValidator>();
+builder.Services.AddValidatorsFromAssemblyContaining<EditAdministrativeProcessDtoValidator>();
+builder.Services.AddValidatorsFromAssemblyContaining<CreateApplicationUserDtoValidator>();
+builder.Services.AddValidatorsFromAssemblyContaining<EditApplicationUserDtoValidator>();
+builder.Services.AddValidatorsFromAssemblyContaining<RegisterDtoValidator>();
+builder.Services.AddValidatorsFromAssemblyContaining<LoginDtoValidator>();
+builder.Services.AddValidatorsFromAssemblyContaining<CreateProcessApprovalStepDtoValidator>();
+builder.Services.AddValidatorsFromAssemblyContaining<EditProcessApprovalStepDtoValidator>();
+builder.Services.AddValidatorsFromAssemblyContaining<CreateRequestDtoValidator>();
+builder.Services.AddValidatorsFromAssemblyContaining<EditRequestDtoValidator>();
+builder.Services.AddValidatorsFromAssemblyContaining<CreateRequestStepDtoValidator>();
+builder.Services.AddValidatorsFromAssemblyContaining<EditRequestStepDtoValidator>();
+builder.Services.AddValidatorsFromAssemblyContaining<CreateRequestStepFileDtoValidator>();
+builder.Services.AddValidatorsFromAssemblyContaining<CreateRoleDtoValidator>();
+builder.Services.AddValidatorsFromAssemblyContaining<AssignRoleDtoValidator>();
+builder.Services.AddValidatorsFromAssemblyContaining<CreateNotificationDtoValidator>();
+builder.Services.AddValidatorsFromAssemblyContaining<EditNotificationDtoValidator>();
+
 
 //Services
 builder.Services.AddScoped<IAdministrativeProcessGenericService, AdministrativeProcessGenericService>();

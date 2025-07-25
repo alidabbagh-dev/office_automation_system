@@ -2,6 +2,7 @@
 using office_automation_system.application.Contracts.Services.AdministrativeProcess;
 using office_automation_system.application.Contracts.UnitOfWork;
 using office_automation_system.application.Dto.AdministrativeProcess;
+using office_automation_system.application.Validator.AdministrativeProcess;
 using office_automation_system.domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,8 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using FluentValidation;
+using FluentValidation.Results;
 
 namespace office_automation_system.Infrastructure.Services.AdministrativeProcess
 {
@@ -17,25 +20,37 @@ namespace office_automation_system.Infrastructure.Services.AdministrativeProcess
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
-
+        private readonly CreateAdministrativeProcessDtoValidator _createValidator;
+        private readonly EditAdministrativeProcessDtoValidator _editValidator;
 
 
         public AdministrativeProcessGenericService(
             IUnitOfWork unitOfWork,
-            IMapper mapper)
+            IMapper mapper,
+            CreateAdministrativeProcessDtoValidator createValidator,
+            EditAdministrativeProcessDtoValidator editValidator)
             
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
+            _createValidator = createValidator;
+            _editValidator = editValidator;
         }
 
 
 
         public async Task<(bool IsSuccess, List<string> Errors)> CreateAsync(CreateAdministrativeProcessDto dto)
         {
-            //ValidationResult validation = await _createValidator.ValidateAsync(dto);
-            //if (!validation.IsValid)
-            //    return (false, validation.Errors.Select(e => e.ErrorMessage).ToList());
+            FluentValidation.Results.ValidationResult validation = await _createValidator.ValidateAsync(dto);
+
+            if (!validation.IsValid)
+            {
+                var errorList = validation.Errors
+                    .Select(e => $"{e.PropertyName}: {e.ErrorMessage}")
+                    .ToList();
+
+                return (false, errorList);
+            }
 
             var AdministrativeProcess = _mapper.Map<office_automation_system.domain.Entities.AdministrativeProcess>(dto);
             await _unitOfWork.AdministrativeProcesses.AddAsync(AdministrativeProcess);
@@ -46,9 +61,17 @@ namespace office_automation_system.Infrastructure.Services.AdministrativeProcess
 
         public async Task<(bool IsSuccess, List<string> Errors)> EditAsync(Guid id, EditAdministrativeProcessDto dto)
         {
-            //ValidationResult validation = await _editValidator.ValidateAsync(dto);
-            //if (!validation.IsValid)
-            //    return (false, validation.Errors.Select(e => e.ErrorMessage).ToList());
+            FluentValidation.Results.ValidationResult validation = await _editValidator.ValidateAsync(dto);
+
+            if (!validation.IsValid)
+            {
+                var errorList = validation.Errors
+                    .Select(e => $"{e.PropertyName}: {e.ErrorMessage}")
+                    .ToList();
+
+                return (false, errorList);
+            }
+
 
             var AdministrativeProcess = await _unitOfWork.AdministrativeProcesses.GetByIdAsync(id);
             if (AdministrativeProcess == null) return (false, new List<string> { "AdministrativeProcess Not Found with this id" });

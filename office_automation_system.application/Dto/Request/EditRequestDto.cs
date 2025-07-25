@@ -16,7 +16,7 @@ namespace office_automation_system.application.Dto.Request
         public Guid? UserId { get; set; }
         public EditApplicationUserDto? User { get; set; }
         public RequestStatus? Status { get; set; }
-        public DateTime? CreatedAt { get; set; }
+        public DateTime? CreatedAt { get; set; } 
         public DateTime? UpdatedAt { get; set; }
     }
 }

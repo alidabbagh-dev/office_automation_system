@@ -52,8 +52,13 @@ namespace office_automation_system.application.Mapping
             CreateMap<RequestStep, GetRequestStepDto>().ReverseMap();
 
             //RequestStepFile Mappings
+            //        CreateMap<CreateRequestStepFileDto, RequestStepFile>()
+            //.ForMember(dest => dest.RequestStepId, opt => opt.MapFrom(src => Guid.Parse(src.RequestStepId)));
+
+            // Entity to DTO (Guid to string)
+            //CreateMap<RequestStepFile, CreateRequestStepFileDto>()
+            //    .ForMember(dest => dest.RequestStepId, opt => opt.MapFrom(src => src.RequestStepId.ToString()));
             CreateMap<RequestStepFile, CreateRequestStepFileDto>().ReverseMap();
-            CreateMap<RequestStepFile, EditRequestStepFileDto>().ReverseMap();
             CreateMap<RequestStepFile, GetRequestStepFileDto>().ReverseMap();
 
 

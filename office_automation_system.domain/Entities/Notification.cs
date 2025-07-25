@@ -14,6 +14,6 @@ namespace office_automation_system.domain.Entities
         public string? Title { get; set; }
         public string? Description { get; set; }
         public bool? IsSeen { get; set; }
-        public DateTime? SentAt { get; set; }
+        public DateTime? SentAt { get; set; } = DateTime.UtcNow;
     }
 }

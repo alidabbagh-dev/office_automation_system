@@ -13,3 +13,4 @@ C:\Users\parmis\source\repos\office_automation_system\office_automation_system.a
 C:\Users\parmis\source\repos\office_automation_system\office_automation_system.application\obj\Debug\net9.0\refint\office_automation_system.application.dll
 C:\Users\parmis\source\repos\office_automation_system\office_automation_system.application\obj\Debug\net9.0\office_automation_system.application.pdb
 C:\Users\parmis\source\repos\office_automation_system\office_automation_system.application\obj\Debug\net9.0\ref\office_automation_system.application.dll
+C:\Users\parmis\source\repos\office_automation_system\office_automation_system.application\obj\Debug\net9.0\office_automation_system.application.sourcelink.json

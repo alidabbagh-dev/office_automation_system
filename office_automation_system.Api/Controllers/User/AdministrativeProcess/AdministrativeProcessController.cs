@@ -18,33 +18,54 @@ namespace office_automation_system.Api.Controllers.User.AdministrativeProcess
             _AdministrativeProcessGenericProcessService = AdministrativeProcessGenericService;
         }
 
-        // GET: api/user/AdministrativeProcesses
+        
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var processes = await _AdministrativeProcessGenericProcessService.GetAllAsync();
-            return Ok(processes);
+            try
+            {
+                var processes = await _AdministrativeProcessGenericProcessService.GetAllAsync();
+                return Ok(processes);
+            }
+            catch (Exception ex) { 
+                return StatusCode(500,ex.Message);
+            }
+            
         }
 
-        // GET: api/user/AdministrativeProcesses/{id}
+        
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(Guid id)
         {
-            var process = await _AdministrativeProcessGenericProcessService.GetByIdAsync(id);
-            if (process == null)
-                return NotFound();
+            try
+            {
+                var process = await _AdministrativeProcessGenericProcessService.GetByIdAsync(id);
+                if (process == null)
+                    return NotFound();
 
-            return Ok(process);
+                return Ok(process);
+            }
+            catch (Exception ex) {
+                return StatusCode(500, ex.Message);
+            }
+            
         }
 
 
 
-        // GET: api/user/AdministrativeProcesses/search?title="hello"
+        
         [HttpGet("search")]
         public async Task<IActionResult> Search([FromQuery] string title)
         {
-            var result = await _AdministrativeProcessGenericProcessService.FindAsync(p => p.Title.Contains(title));
-            return Ok(result);
+            try
+            {
+                var result = await _AdministrativeProcessGenericProcessService.FindAsync(p => p.Title.Contains(title));
+                return Ok(result);
+            }
+            catch (Exception ex) {
+                return StatusCode(500, ex.Message);            
+            }
+            
         }
 
     }

@@ -20,7 +20,7 @@ namespace office_automation_system.application.Dto.RequestStep
         public string? Title { get; set; }
         public string? Description { get; set; }
         public bool? IsCurrentStep { get; set; }
-        public DateTime? CreatedAt { get; set; }
-        public DateTime? UpdatedAt { get; set; }
+        public DateTime? CreatedAt { get; set; } 
+        public DateTime? UpdatedAt { get; set; } = DateTime.UtcNow;
     }
 }

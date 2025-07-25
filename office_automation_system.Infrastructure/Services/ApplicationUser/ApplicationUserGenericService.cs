@@ -5,13 +5,15 @@ using Microsoft.EntityFrameworkCore;
 using office_automation_system.application.Contracts.Services.ApplicationUser;
 using office_automation_system.application.Dto.ApplicationUser;
 using office_automation_system.application.Dto.Role;
+using office_automation_system.application.Validator.ApplicationUser;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
-
+using FluentValidation;
+using FluentValidation.Results;
 namespace office_automation_system.Infrastructure.Services.ApplicationUser
 {
     public class ApplicationUserGenericService : IApplicationUserGenericService
@@ -19,13 +21,19 @@ namespace office_automation_system.Infrastructure.Services.ApplicationUser
         private readonly UserManager<office_automation_system.domain.Entities.ApplicationUser> _userManager;
         private readonly RoleManager<IdentityRole<Guid>> _roleManager;
         private readonly IMapper _mapper;
+        private readonly CreateApplicationUserDtoValidator _createValidator;
+        private readonly EditApplicationUserDtoValidator _editValidator;
 
         public ApplicationUserGenericService(IMapper mapper,UserManager<office_automation_system.domain.Entities.ApplicationUser> userManager,
-                                     RoleManager<IdentityRole<Guid>> roleManager)
+                                     RoleManager<IdentityRole<Guid>> roleManager,
+                                     EditApplicationUserDtoValidator editValidator,
+                                     CreateApplicationUserDtoValidator createValidator)
         {
             _userManager = userManager;
             _roleManager = roleManager;
             _mapper = mapper;
+            _editValidator = editValidator;
+            _createValidator = createValidator;
         }
 
         public async Task<List<GetApplicationUserDto>> GetAllUsersAsync()
@@ -103,8 +111,19 @@ namespace office_automation_system.Infrastructure.Services.ApplicationUser
         }
 
 
-        public async Task<bool> CreateUserAsync(CreateApplicationUserDto dto)
+        public async Task<(bool Success , List<string> Errors)> CreateUserAsync(CreateApplicationUserDto dto)
         {
+            FluentValidation.Results.ValidationResult validation = await _createValidator.ValidateAsync(dto);
+
+            if (!validation.IsValid)
+            {
+                var errorList = validation.Errors
+                    .Select(e => $"{e.PropertyName}: {e.ErrorMessage}")
+                    .ToList();
+
+                return (false, errorList);
+            }
+
             var user = new office_automation_system.domain.Entities.ApplicationUser
             {
                 UserName = dto?.Email,
@@ -113,18 +132,31 @@ namespace office_automation_system.Infrastructure.Services.ApplicationUser
             };
 
             var result = await _userManager.CreateAsync(user, dto.Password);
-            if (!result.Succeeded) return false;
+            if (!result.Succeeded) return (false, ["Could not Create User"]);
 
             var AssignRoleDto = new AssignRoleDto { UserId = user?.Id, RoleId = dto?.RoleId };
             await AssignRoleToUserAsync(AssignRoleDto);
 
-            return true;
+            return (true,[]) ;
         }
 
-        public async Task<bool> UpdateUserAsync(Guid Id , EditApplicationUserDto dto)
+        public async Task<(bool Success , List<string> Errors)> UpdateUserAsync(Guid Id , EditApplicationUserDto dto)
         {
+
+            FluentValidation.Results.ValidationResult validation = await _editValidator.ValidateAsync(dto);
+
+            if (!validation.IsValid)
+            {
+                var errorList = validation.Errors
+                    .Select(e => $"{e.PropertyName}: {e.ErrorMessage}")
+                    .ToList();
+
+                return (false, errorList);
+            }
+
+
             var user = await _userManager.FindByIdAsync(Id.ToString());
-            if (user == null) return false;
+            if (user == null) return (false,["Did not Find the User"]) ;
 
             user.Email = dto?.Email;
             user.UserName = dto?.Email;
@@ -133,7 +165,12 @@ namespace office_automation_system.Infrastructure.Services.ApplicationUser
             await AssignRoleToUserAsync(AssignRoleDto);
 
             var result = await _userManager.UpdateAsync(user);
-            return result.Succeeded;
+            if(!result.Succeeded)
+            {
+                return (false, ["Could not Update user"]);
+            }
+
+            return (true, []);
         }
 
         public async Task<bool> LockUserAsync(Guid userId)

@@ -2,38 +2,51 @@
 using office_automation_system.application.Contracts.Services.Notification;
 using office_automation_system.application.Contracts.UnitOfWork;
 using office_automation_system.application.Dto.Notification;
+using office_automation_system.application.Validator.Notification;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
-
+using FluentValidation;
+using FluentValidation.Results;
 namespace office_automation_system.Infrastructure.Services.Notification
 {
     public class NotificationGenericService : INotificationGenericService
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
-
-
+        private readonly CreateNotificationDtoValidator _createValidator;
+        private readonly EditNotificationDtoValidator _editValidator;
 
         public NotificationGenericService(
             IUnitOfWork unitOfWork,
-            IMapper mapper)
+            IMapper mapper,
+            EditNotificationDtoValidator editValidator,
+            CreateNotificationDtoValidator createValidator)
 
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
+            _createValidator = createValidator;
+            _editValidator = editValidator;
         }
 
 
 
         public async Task<(bool IsSuccess, List<string> Errors)> CreateAsync(CreateNotificationDto dto)
         {
-            //ValidationResult validation = await _createValidator.ValidateAsync(dto);
-            //if (!validation.IsValid)
-            //    return (false, validation.Errors.Select(e => e.ErrorMessage).ToList());
+            FluentValidation.Results.ValidationResult validation = await _createValidator.ValidateAsync(dto);
+
+            if (!validation.IsValid)
+            {
+                var errorList = validation.Errors
+                    .Select(e => $"{e.PropertyName}: {e.ErrorMessage}")
+                    .ToList();
+
+                return (false, errorList);
+            }
 
             var Notification = _mapper.Map<office_automation_system.domain.Entities.Notification>(dto);
             await _unitOfWork.Notifications.AddAsync(Notification);
@@ -44,9 +57,16 @@ namespace office_automation_system.Infrastructure.Services.Notification
 
         public async Task<(bool IsSuccess, List<string> Errors)> EditAsync(Guid id, EditNotificationDto dto)
         {
-            //ValidationResult validation = await _editValidator.ValidateAsync(dto);
-            //if (!validation.IsValid)
-            //    return (false, validation.Errors.Select(e => e.ErrorMessage).ToList());
+            FluentValidation.Results.ValidationResult validation = await _editValidator.ValidateAsync(dto);
+
+            if (!validation.IsValid)
+            {
+                var errorList = validation.Errors
+                    .Select(e => $"{e.PropertyName}: {e.ErrorMessage}")
+                    .ToList();
+
+                return (false, errorList);
+            }
 
             var Notification = await _unitOfWork.Notifications.GetByIdAsync(id);
             if (Notification == null) return (false, new List<string> { "Notification Not Found with this id" });

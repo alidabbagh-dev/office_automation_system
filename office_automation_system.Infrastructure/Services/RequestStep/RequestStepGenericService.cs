@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using FluentValidation;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using office_automation_system.application.Contracts.Services.Request;
@@ -6,6 +7,7 @@ using office_automation_system.application.Contracts.Services.RequestStep;
 using office_automation_system.application.Contracts.UnitOfWork;
 using office_automation_system.application.Dto.Request;
 using office_automation_system.application.Dto.RequestStep;
+using office_automation_system.application.Validator.RequestStep;
 using office_automation_system.domain.Enums;
 using System;
 using System.Collections.Generic;
@@ -26,7 +28,9 @@ namespace office_automation_system.Infrastructure.Services.RequestStep
         private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly UserManager<office_automation_system.domain.Entities.ApplicationUser> _userManager;
         private readonly RoleManager<IdentityRole<Guid>> _roleManager;
-        private readonly IRequestGenericService _requestGenericService;
+        private readonly CreateRequestStepDtoValidator _createValidator;
+        private readonly EditRequestStepDtoValidator _editValidator;
+
 
         public RequestStepGenericService(
             IUnitOfWork unitOfWork,
@@ -34,7 +38,9 @@ namespace office_automation_system.Infrastructure.Services.RequestStep
             IHttpContextAccessor httpContextAccessor,
             UserManager<office_automation_system.domain.Entities.ApplicationUser> userManager,
             RoleManager<IdentityRole<Guid>> roleManager,
-            IRequestGenericService requestGenericService
+            CreateRequestStepDtoValidator createValidator,
+            EditRequestStepDtoValidator editValidator
+
             )
 
         {
@@ -43,7 +49,9 @@ namespace office_automation_system.Infrastructure.Services.RequestStep
             _httpContextAccessor = httpContextAccessor;
             _userManager = userManager;
             _roleManager = roleManager;
-            _requestGenericService = requestGenericService;
+            _createValidator = createValidator;
+            _editValidator = editValidator;
+            
         }
 
 
@@ -110,9 +118,16 @@ namespace office_automation_system.Infrastructure.Services.RequestStep
         }
         public async Task<(bool IsSuccess, List<string> Errors)> CreateAsync(CreateRequestStepDto dto)
         {
-            //ValidationResult validation = await _createValidator.ValidateAsync(dto);
-            //if (!validation.IsValid)
-            //    return (false, validation.Errors.Select(e => e.ErrorMessage).ToList());
+            FluentValidation.Results.ValidationResult validation = await _createValidator.ValidateAsync(dto);
+
+            if (!validation.IsValid)
+            {
+                var errorList = validation.Errors
+                    .Select(e => $"{e.PropertyName}: {e.ErrorMessage}")
+                    .ToList();
+
+                return (false, errorList);
+            }
 
             var RequestStep = _mapper.Map<office_automation_system.domain.Entities.RequestStep>(dto);
             await _unitOfWork.RequestSteps.AddAsync(RequestStep);
@@ -123,9 +138,16 @@ namespace office_automation_system.Infrastructure.Services.RequestStep
 
         public async Task<(bool IsSuccess, List<string> Errors)> EditAsync(Guid id, EditRequestStepDto dto)
         {
-            //ValidationResult validation = await _editValidator.ValidateAsync(dto);
-            //if (!validation.IsValid)
-            //    return (false, validation.Errors.Select(e => e.ErrorMessage).ToList());
+            FluentValidation.Results.ValidationResult validation = await _editValidator.ValidateAsync(dto);
+
+            if (!validation.IsValid)
+            {
+                var errorList = validation.Errors
+                    .Select(e => $"{e.PropertyName}: {e.ErrorMessage}")
+                    .ToList();
+
+                return (false, errorList);
+            }
 
             var IsVerified = await CheckIsVerified(id);
             if (IsVerified == false)

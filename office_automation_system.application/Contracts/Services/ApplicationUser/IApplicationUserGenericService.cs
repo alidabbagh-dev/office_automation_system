@@ -14,8 +14,8 @@ namespace office_automation_system.application.Contracts.Services.ApplicationUse
         Task<List<GetApplicationUserDto>> GetAllUsersAsync();
         Task<GetApplicationUserDto?> GetUserByIdAsync(Guid userId);
         Task<List<GetApplicationUserDto>> FilterUsersAsync(UserFilterDto filter);
-        Task<bool> CreateUserAsync(CreateApplicationUserDto dto);
-        Task<bool> UpdateUserAsync(Guid Id , EditApplicationUserDto dto);
+        Task<(bool Success, List<string> Errors)> CreateUserAsync(CreateApplicationUserDto dto);
+        Task<(bool Success, List<string> Errors)> UpdateUserAsync(Guid Id, EditApplicationUserDto dto);
         Task<bool> LockUserAsync(Guid userId);
         Task<bool> UnlockUserAsync(Guid userId);
         Task<bool> DeleteUserAsync(Guid userId);

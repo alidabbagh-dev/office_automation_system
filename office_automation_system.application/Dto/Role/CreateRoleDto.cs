@@ -8,6 +8,6 @@ namespace office_automation_system.application.Dto.Role
 {
     public class CreateRoleDto
     {
-        public string Name { get; set; } = string.Empty;
+        public string? Name { get; set; }
     }
 }

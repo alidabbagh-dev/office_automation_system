@@ -1,0 +1,18 @@
+# پوشه‌های VS و فایل‌های موقتی
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# پوشه‌های کامپایل‌شده
+bin/
+obj/
+out/
+
+# پوشه‌های تست و لاگ
+TestResults/
+*.log
+
+# فایل‌های VS Code هم اگه خواستی:
+.vscode/
