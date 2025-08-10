@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using office_automation_system.application.Contracts.Services.RequestStepFile;
 using office_automation_system.application.Dto.RequestStepFile;
+using office_automation_system.application.Wrapper;
 
 namespace office_automation_system.Api.Controllers.User.RequestStepFile
 {
@@ -29,11 +30,17 @@ namespace office_automation_system.Api.Controllers.User.RequestStepFile
             {
                 var result = await _RequestStepFileGenericService.GetByIdAsync(id);
                 if (result == null)
-                    return NotFound("Request Step file not found");
-                return Ok(result);
+                    return NotFound(new ApiResponse<object>(
+                        false,"request step file not found",null,null    
+                    ));
+                return Ok(new ApiResponse<GetRequestStepFileDto>(
+                    true,"request step file received successfully",result,null    
+                ));
             }
             catch (Exception ex) { 
-                return StatusCode(500,ex.Message);
+                return StatusCode(500,new ApiResponse<object>(
+                    false,ex.Message,null,null    
+                ));
             }
             
         }
@@ -51,10 +58,14 @@ namespace office_automation_system.Api.Controllers.User.RequestStepFile
                 (filter.RequestStepId == null || p.RequestStepId == filter.RequestStepId)
             );
 
-                return Ok(result);
+                return Ok(new ApiResponse<List<GetRequestStepFileDto>>(
+                    true,"List of searched request step files",result,null    
+                ));
             }
             catch (Exception ex) {
-                return StatusCode(500, ex.Message);
+                return StatusCode(500, new ApiResponse<object>(
+                    false,ex.Message,null,null    
+                ));
             }
             
         }
@@ -69,15 +80,21 @@ namespace office_automation_system.Api.Controllers.User.RequestStepFile
 
                 if (!result.IsSuccess)
                 {
-                    return BadRequest(result.Errors);
+                    return BadRequest(new ApiResponse<object>(
+                        false,null,null,result.Errors    
+                    ));
                 }
                 else
                 {
-                    return Ok("Attachment File Uploaded Successfully");
+                    return Ok(new ApiResponse<object>(
+                        true,"request step file created successfully",null,null    
+                    ));
                 }
             }
             catch (Exception ex) { 
-                return StatusCode(500, ex.Message); 
+                return StatusCode(500,new ApiResponse<object>(
+                    false,ex.Message,null,null    
+                )); 
             }
             
         }
@@ -90,14 +107,20 @@ namespace office_automation_system.Api.Controllers.User.RequestStepFile
                 var success = await _RequestStepFileGenericService.SoftDeleteAsync(id);
                 if (!success)
                 {
-                    return BadRequest("Could not delete Request Step attachment File");
+                    return BadRequest(new ApiResponse<object>(
+                        false,"could not delete request step file",null,null    
+                    ));
 
                 }
 
-                return Ok("Request Step Attachment file deleted successfully");
+                return Ok(new ApiResponse<object>(
+                    true,"request step file soft deleted successfully",null,null    
+                ));
             }
             catch (Exception ex) {
-                return StatusCode(500, ex.Message);
+                return StatusCode(500,new ApiResponse<object>(
+                    false, ex.Message,null,null    
+                ));
             }
             
         }

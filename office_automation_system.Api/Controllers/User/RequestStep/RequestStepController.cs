@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using office_automation_system.application.Contracts.Services.RequestStep;
 using office_automation_system.application.Dto.RequestStep;
+using office_automation_system.application.Wrapper;
 
 namespace office_automation_system.Api.Controllers.User.RequestStep
 {
@@ -27,11 +28,17 @@ namespace office_automation_system.Api.Controllers.User.RequestStep
             {
                 var result = await _RequestStepGenericService.GetByIdAsync(id);
                 if (result == null)
-                    return NotFound("Request Step not found");
-                return Ok(result);
+                    return NotFound(new ApiResponse<object>(
+                        false,"request step not found",null,null
+                    ));
+                return Ok(new ApiResponse<GetRequestStepDto>(
+                    true,"request step received successfully",result,null    
+                ));
             }
             catch (Exception ex) {
-                return StatusCode(500, ex.Message);
+                return StatusCode(500,new ApiResponse<object>(
+                    false,ex.Message,null,null    
+                ));
             }
             
         }
@@ -50,10 +57,14 @@ namespace office_automation_system.Api.Controllers.User.RequestStep
                 (filter.Title == null || p.Title.Contains(filter.Title))
             );
 
-                return Ok(result);
+                return Ok(new ApiResponse<List<GetRequestStepDto>>(
+                    true,"list of searched request steps",result,null    
+                ));
             }
             catch (Exception ex) {
-                return StatusCode(500, ex.Message);
+                return StatusCode(500, new ApiResponse<object>(
+                    false, ex.Message,null,null    
+                ));
             }
             
         }
@@ -68,11 +79,17 @@ namespace office_automation_system.Api.Controllers.User.RequestStep
             {
                 var (success, errors) = await _RequestStepGenericService.EditAsync(id, dto);
                 if (!success)
-                    return BadRequest(errors);
-                return Ok("Request step updated successfully");
+                    return BadRequest(new ApiResponse<object>(
+                        false,null,null,errors    
+                    ));
+                return Ok(new ApiResponse<object>(
+                    true,"Request step updated successfully",null,null    
+                ));
             }
             catch (Exception ex) {
-                return StatusCode(500, ex.Message);
+                return StatusCode(500,new ApiResponse<object>(
+                    false,ex.Message,null,null    
+                ));
             }
             
         }
@@ -84,12 +101,18 @@ namespace office_automation_system.Api.Controllers.User.RequestStep
             {
                 var (success, errors) = await _RequestStepGenericService.ReferToPreviousStep(RequestStepId);
                 if (!success)
-                    return BadRequest(errors);
+                    return BadRequest(new ApiResponse<object>(
+                        false,null,null,errors    
+                    ));
 
-                return Ok("Request Step referred back successfully");
+                return Ok(new ApiResponse<object>(
+                    true,"request step referred back successfully",null,null    
+                ));
             }
             catch (Exception ex) {
-                return StatusCode(500, ex.Message);
+                return StatusCode(500, new ApiResponse<object>(
+                    false, ex.Message,null,null    
+                ));
             }
             
 
@@ -103,12 +126,18 @@ namespace office_automation_system.Api.Controllers.User.RequestStep
             {
                 var (success, errors) = await _RequestStepGenericService.ReferToNextStep(RequestStepId);
                 if (!success)
-                    return BadRequest(errors);
+                    return BadRequest(new ApiResponse<object>(
+                        false, null,null,errors    
+                    ));
 
-                return Ok("Request Step referred to the next step successfully");
+                return Ok(new ApiResponse<object>(
+                    true,"request step referred to next step successfully",null,null    
+                ));
             }
             catch (Exception ex) {
-                return StatusCode(500, ex.Message);
+                return StatusCode(500,new ApiResponse<object>(
+                    false,ex.Message,null,null    
+                ));
             }
             
 
@@ -121,13 +150,19 @@ namespace office_automation_system.Api.Controllers.User.RequestStep
             {
                 var (success, errors) = await _RequestStepGenericService.ConfirmFinalStep(RequestStepId);
                 if (!success)
-                    return BadRequest(errors);
+                    return BadRequest(new ApiResponse<object>(
+                        false,null,null,errors    
+                    ));
 
-                return Ok("Final Request Step Confirmed successfully");
+                return Ok(new ApiResponse<object>(
+                    true,"request step confirmed as final step",null,null    
+                ));
 
             }
             catch (Exception ex) { 
-                return StatusCode(500,ex.Message);            
+                return StatusCode(500,new ApiResponse<object>(
+                    false, ex.Message,null,null    
+                ));            
             }
             
         }

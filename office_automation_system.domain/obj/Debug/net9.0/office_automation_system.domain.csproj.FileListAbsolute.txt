@@ -6,8 +6,8 @@ C:\Users\parmis\source\repos\office_automation_system\office_automation_system.d
 C:\Users\parmis\source\repos\office_automation_system\office_automation_system.domain\obj\Debug\net9.0\office_automation_system.domain.AssemblyInfoInputs.cache
 C:\Users\parmis\source\repos\office_automation_system\office_automation_system.domain\obj\Debug\net9.0\office_automation_system.domain.AssemblyInfo.cs
 C:\Users\parmis\source\repos\office_automation_system\office_automation_system.domain\obj\Debug\net9.0\office_automation_system.domain.csproj.CoreCompileInputs.cache
+C:\Users\parmis\source\repos\office_automation_system\office_automation_system.domain\obj\Debug\net9.0\office_automation_system.domain.sourcelink.json
 C:\Users\parmis\source\repos\office_automation_system\office_automation_system.domain\obj\Debug\net9.0\office_automation_system.domain.dll
 C:\Users\parmis\source\repos\office_automation_system\office_automation_system.domain\obj\Debug\net9.0\refint\office_automation_system.domain.dll
 C:\Users\parmis\source\repos\office_automation_system\office_automation_system.domain\obj\Debug\net9.0\office_automation_system.domain.pdb
 C:\Users\parmis\source\repos\office_automation_system\office_automation_system.domain\obj\Debug\net9.0\ref\office_automation_system.domain.dll
-C:\Users\parmis\source\repos\office_automation_system\office_automation_system.domain\obj\Debug\net9.0\office_automation_system.domain.sourcelink.json

@@ -19,6 +19,6 @@ namespace office_automation_system.application.Contracts.Services.ApplicationUse
         Task<bool> LockUserAsync(Guid userId);
         Task<bool> UnlockUserAsync(Guid userId);
         Task<bool> DeleteUserAsync(Guid userId);
-        Task<bool> AssignRoleToUserAsync(AssignRoleDto dto);
+        Task<(bool Success, List<string> Errors)> AssignRoleToUserAsync(AssignRoleDto dto);
     }
 }

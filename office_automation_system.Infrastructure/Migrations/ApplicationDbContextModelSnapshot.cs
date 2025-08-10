@@ -223,7 +223,8 @@ namespace office_automation_system.Infrastructure.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("RefreshToken")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.Property<DateTime?>("RefreshTokenExpiryTime")
                         .HasColumnType("datetime2");
@@ -235,7 +236,8 @@ namespace office_automation_system.Infrastructure.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("UserCode")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("UserName")
                         .HasMaxLength(256)
@@ -250,6 +252,10 @@ namespace office_automation_system.Infrastructure.Migrations
                         .IsUnique()
                         .HasDatabaseName("UserNameIndex")
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
+
+                    b.HasIndex("UserCode")
+                        .IsUnique()
+                        .HasFilter("[UserCode] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
                 });
@@ -326,6 +332,8 @@ namespace office_automation_system.Infrastructure.Migrations
                     b.HasIndex("AdministrativeProcessId");
 
                     b.HasIndex("OwnerId");
+
+                    b.HasIndex("RoleId");
 
                     b.ToTable("ProcessApprovalSteps");
                 });
@@ -404,6 +412,8 @@ namespace office_automation_system.Infrastructure.Migrations
                     b.HasIndex("OwnerId");
 
                     b.HasIndex("RequestId");
+
+                    b.HasIndex("RoleId");
 
                     b.ToTable("RequestSteps");
                 });
@@ -512,9 +522,15 @@ namespace office_automation_system.Infrastructure.Migrations
                         .HasForeignKey("OwnerId")
                         .OnDelete(DeleteBehavior.Restrict);
 
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole<System.Guid>", "Role")
+                        .WithMany()
+                        .HasForeignKey("RoleId");
+
                     b.Navigation("AdministrativeProcess");
 
                     b.Navigation("Owner");
+
+                    b.Navigation("Role");
                 });
 
             modelBuilder.Entity("office_automation_system.domain.Entities.Request", b =>
@@ -546,9 +562,15 @@ namespace office_automation_system.Infrastructure.Migrations
                         .HasForeignKey("RequestId")
                         .OnDelete(DeleteBehavior.Restrict);
 
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole<System.Guid>", "Role")
+                        .WithMany()
+                        .HasForeignKey("RoleId");
+
                     b.Navigation("Owner");
 
                     b.Navigation("Request");
+
+                    b.Navigation("Role");
                 });
 
             modelBuilder.Entity("office_automation_system.domain.Entities.RequestStepFile", b =>

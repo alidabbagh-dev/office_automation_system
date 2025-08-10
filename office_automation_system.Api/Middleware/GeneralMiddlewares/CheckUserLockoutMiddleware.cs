@@ -1,6 +1,7 @@
 ﻿
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
+using office_automation_system.application.Wrapper;
 using office_automation_system.domain.Entities;
 using System.Security.Claims;
 using System.Threading.Tasks;
@@ -40,13 +41,13 @@ namespace office_automation_system.Api.Middleware.GeneralMiddlewares
             if (user != null && await userManager.IsLockedOutAsync(user))
             {
                 context.Response.StatusCode = StatusCodes.Status403Forbidden;
-                await context.Response.WriteAsJsonAsync(new
-                {
-                    statusCode = 403,
-                    message = "User account is locked.",
-                    data = (object?)null,
-                    errors = new[] { "Your account is locked. Please contact administrator." }
-                });
+                await context.Response.WriteAsJsonAsync(
+
+                    new ApiResponse<object>(false, "User account is locked",
+                        null, ["Your account is locked. Please contact administrator."]
+                    )
+                );
+
                 return;
             }
 

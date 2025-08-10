@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using office_automation_system.application.Contracts.Services.Request;
 using office_automation_system.application.Dto.Request;
+using office_automation_system.application.Wrapper;
 using System.Security.Claims;
 
 namespace office_automation_system.Api.Controllers.User.Request
@@ -32,15 +33,24 @@ namespace office_automation_system.Api.Controllers.User.Request
                 
                 if (!IsUserAllowedToAccessRequest)
                 {
-                    return NotFound("this request is not related to you");
+                    return NotFound(new ApiResponse<object>(
+                        false,"Request Not Found",null,null
+                    ));
                 }
                 var result = await _RequestGenericService.GetByIdAsync(id);
                 if (result == null)
-                    return NotFound("Request not found");
-                return Ok(result);
+                    return NotFound(new ApiResponse<object>(
+                        false,"Request Not Found",null,null    
+                    ));
+
+                return Ok(new ApiResponse<GetRequestDto>(
+                    true,"Request Received Successfully",result,null    
+                ));
             }
             catch (Exception ex) { 
-                return StatusCode(500,ex.Message);
+                return StatusCode(500,new ApiResponse<object>(
+                    false,ex.Message,null,null    
+                ));
             }
             
 
@@ -55,13 +65,19 @@ namespace office_automation_system.Api.Controllers.User.Request
                 var relatedRequests = await _RequestGenericService.GetUserRelatedRequestsAsync();
                 if (relatedRequests == null || !relatedRequests.Any())
                 {
-                    return NotFound("No Request Found");
+                    return NotFound(new ApiResponse<object>(
+                        false,"Request Not Found",null,null    
+                    ));
                 }
 
-                return Ok(relatedRequests);
+                return Ok(new ApiResponse<List<GetRequestDto>>(
+                    true,"List Of Searched Requests",relatedRequests,null    
+                ));
             }
             catch (Exception ex) {
-                return StatusCode(500, ex.Message);
+                return StatusCode(500, new ApiResponse<object>(
+                    false, ex.Message,null,null    
+                ));
             }
             
         }
@@ -76,16 +92,24 @@ namespace office_automation_system.Api.Controllers.User.Request
                 var IsVerified = await _RequestGenericService.CheckIsVerified(dto);
                 if (!IsVerified)
                 {
-                    return BadRequest("you are not allowed to make request for this process");
+                    return BadRequest(new ApiResponse<object>(
+                        false,"You are not allowed to make this request",null,null    
+                    ));
                 }
                 var (success, errors) = await _RequestGenericService.CreateAsync(dto);
                 if (!success)
-                    return BadRequest(errors);
+                    return BadRequest(new ApiResponse<object>(
+                        false,null,null,errors    
+                    ));
 
-                return Ok("request created successfully");
+                return Ok(new ApiResponse<object>(
+                    true,"Request Created Successfully",null,null    
+                ));
             }
             catch (Exception ex) {
-                return StatusCode(500, ex.Message);
+                return StatusCode(500, new ApiResponse<object>(
+                    false,ex.Message,null,null    
+                ));
             }
             
         }
@@ -95,21 +119,21 @@ namespace office_automation_system.Api.Controllers.User.Request
 
 
 
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(Guid id)
-        {
-            try
-            {
-                var success = await _RequestGenericService.DeleteAsync(id);
-                if (!success)
-                    return NotFound("Request not found");
-                return Ok("Request deleted successfully");
-            }
-            catch (Exception ex) {
-                return StatusCode(500, ex.Message);
-            }
+        //[HttpDelete("{id}")]
+        //public async Task<IActionResult> Delete(Guid id)
+        //{
+        //    try
+        //    {
+        //        var success = await _RequestGenericService.DeleteAsync(id);
+        //        if (!success)
+        //            return NotFound("Request not found");
+        //        return Ok("Request deleted successfully");
+        //    }
+        //    catch (Exception ex) {
+        //        return StatusCode(500, ex.Message);
+        //    }
             
-        }
+        //}
 
         [HttpPatch("soft-delete/{id}")]
         public async Task<IActionResult> SoftDelete(Guid id)
@@ -122,20 +146,31 @@ namespace office_automation_system.Api.Controllers.User.Request
                 var Request = await _RequestGenericService.GetByIdAsync(id);
                 if (Request == null)
                 {
-                    return NotFound("Request not found");
+                    return NotFound(new ApiResponse<object>(
+                        false,"Request Not Found",null,null    
+                    ));
                 }
 
                 if (Request.UserId != userIdGuid)
                 {
-                    return BadRequest("You are not allowed to delete this request");
+                    return BadRequest(new ApiResponse<object>(
+                        false,"You are not allowed to make this request",null,null    
+                    ));
                 }
                 var success = await _RequestGenericService.SoftDeleteAsync(id);
                 if (!success)
-                    return BadRequest("could not soft delete request");
-                return Ok("request soft deleted successfully");
+                    return BadRequest(new ApiResponse<object>(
+                        false,"Could not soft delete this request",null,null    
+                        
+                    ));
+                return Ok(new ApiResponse<object>(
+                    true,"Request soft deleted successfully",null,null    
+                ));
             }
             catch (Exception ex) {
-                return StatusCode(500, ex.Message);
+                return StatusCode(500, new ApiResponse<object>(
+                    false,ex.Message,null,null    
+                ));
             }
             
         }
@@ -154,7 +189,9 @@ namespace office_automation_system.Api.Controllers.User.Request
 
                 if (result == null || !result.Any())
                 {
-                    return NotFound("No Request Found");
+                    return NotFound(new ApiResponse<object>(
+                        false,"Request not found",null,null    
+                    ));
                 }
 
                 var AllowedResults = new List<GetRequestDto>();
@@ -166,11 +203,15 @@ namespace office_automation_system.Api.Controllers.User.Request
                         AllowedResults.Add(Request);
                     }
                 }
-
-                return Ok(AllowedResults);
+                
+                return Ok(new ApiResponse<List<GetRequestDto>>(
+                    true,"List of Searched Requests",AllowedResults,null    
+                ));
             }
             catch (Exception ex) { 
-                return StatusCode(500,ex.Message);
+                return StatusCode(500,new ApiResponse<object>(
+                    false,ex.Message,null,null    
+                ));
             }
             
         }

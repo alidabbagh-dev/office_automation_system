@@ -1,5 +1,6 @@
 C:\Users\parmis\source\repos\office_automation_system\office_automation_system.Api\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\parmis\source\repos\office_automation_system\office_automation_system.Api\bin\Debug\net9.0\appsettings.json
+C:\Users\parmis\source\repos\office_automation_system\office_automation_system.Api\bin\Debug\net9.0\data.json
 C:\Users\parmis\source\repos\office_automation_system\office_automation_system.Api\bin\Debug\net9.0\office_automation_system.Api.staticwebassets.endpoints.json
 C:\Users\parmis\source\repos\office_automation_system\office_automation_system.Api\bin\Debug\net9.0\office_automation_system.Api.exe
 C:\Users\parmis\source\repos\office_automation_system\office_automation_system.Api\bin\Debug\net9.0\office_automation_system.Api.deps.json
@@ -9,6 +10,9 @@ C:\Users\parmis\source\repos\office_automation_system\office_automation_system.A
 C:\Users\parmis\source\repos\office_automation_system\office_automation_system.Api\bin\Debug\net9.0\AutoMapper.dll
 C:\Users\parmis\source\repos\office_automation_system\office_automation_system.Api\bin\Debug\net9.0\Azure.Core.dll
 C:\Users\parmis\source\repos\office_automation_system\office_automation_system.Api\bin\Debug\net9.0\Azure.Identity.dll
+C:\Users\parmis\source\repos\office_automation_system\office_automation_system.Api\bin\Debug\net9.0\FluentValidation.dll
+C:\Users\parmis\source\repos\office_automation_system\office_automation_system.Api\bin\Debug\net9.0\FluentValidation.AspNetCore.dll
+C:\Users\parmis\source\repos\office_automation_system\office_automation_system.Api\bin\Debug\net9.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\parmis\source\repos\office_automation_system\office_automation_system.Api\bin\Debug\net9.0\Humanizer.dll
 C:\Users\parmis\source\repos\office_automation_system\office_automation_system.Api\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\parmis\source\repos\office_automation_system\office_automation_system.Api\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.Internal.dll
@@ -164,6 +168,7 @@ C:\Users\parmis\source\repos\office_automation_system\office_automation_system.A
 C:\Users\parmis\source\repos\office_automation_system\office_automation_system.Api\obj\Debug\net9.0\office_automation_system.Api.csproj.CoreCompileInputs.cache
 C:\Users\parmis\source\repos\office_automation_system\office_automation_system.Api\obj\Debug\net9.0\office_automation_system.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\parmis\source\repos\office_automation_system\office_automation_system.Api\obj\Debug\net9.0\office_automation_system.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\parmis\source\repos\office_automation_system\office_automation_system.Api\obj\Debug\net9.0\office_automation_system.Api.sourcelink.json
 C:\Users\parmis\source\repos\office_automation_system\office_automation_system.Api\obj\Debug\net9.0\scopedcss\bundle\office_automation_system.Api.styles.css
 C:\Users\parmis\source\repos\office_automation_system\office_automation_system.Api\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\parmis\source\repos\office_automation_system\office_automation_system.Api\obj\Debug\net9.0\staticwebassets.development.json
@@ -181,8 +186,3 @@ C:\Users\parmis\source\repos\office_automation_system\office_automation_system.A
 C:\Users\parmis\source\repos\office_automation_system\office_automation_system.Api\obj\Debug\net9.0\office_automation_system.Api.pdb
 C:\Users\parmis\source\repos\office_automation_system\office_automation_system.Api\obj\Debug\net9.0\office_automation_system.Api.genruntimeconfig.cache
 C:\Users\parmis\source\repos\office_automation_system\office_automation_system.Api\obj\Debug\net9.0\ref\office_automation_system.Api.dll
-C:\Users\parmis\source\repos\office_automation_system\office_automation_system.Api\bin\Debug\net9.0\data.json
-C:\Users\parmis\source\repos\office_automation_system\office_automation_system.Api\obj\Debug\net9.0\office_automation_system.Api.sourcelink.json
-C:\Users\parmis\source\repos\office_automation_system\office_automation_system.Api\bin\Debug\net9.0\FluentValidation.dll
-C:\Users\parmis\source\repos\office_automation_system\office_automation_system.Api\bin\Debug\net9.0\FluentValidation.AspNetCore.dll
-C:\Users\parmis\source\repos\office_automation_system\office_automation_system.Api\bin\Debug\net9.0\FluentValidation.DependencyInjectionExtensions.dll

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("office_automation_system.application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+66114dd1762942af413853328813f22d2d6a3353")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0365aade665e79d48ba340cf7457d15cd2ba9be0")]
 [assembly: System.Reflection.AssemblyProductAttribute("office_automation_system.application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("office_automation_system.application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

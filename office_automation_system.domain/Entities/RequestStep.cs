@@ -1,4 +1,5 @@
-﻿using office_automation_system.domain.Entities.Common;
+﻿using Microsoft.AspNetCore.Identity;
+using office_automation_system.domain.Entities.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,7 @@ namespace office_automation_system.domain.Entities
         public Request? Request { get; set; }
         public Guid? OwnerId { get; set; }
         public Guid? RoleId { get; set; }
+        public IdentityRole<Guid>? Role { get; set; }
         public ApplicationUser? Owner { get; set; }
         public int? Order {  get; set; }
         public string? Title { get; set; }

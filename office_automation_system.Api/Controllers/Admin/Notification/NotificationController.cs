@@ -1,10 +1,9 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-
 using office_automation_system.application.Contracts.Services.Notification;
 using office_automation_system.application.Dto.Notification;
-
+using office_automation_system.application.Wrapper;
 
 namespace office_automation_system.Api.Controllers.Admin.Notification
 {
@@ -27,10 +26,14 @@ namespace office_automation_system.Api.Controllers.Admin.Notification
             try
             {
                 var notifications = await _NotificationGenericService.GetAllAsync();
-                return Ok(notifications);
+                return Ok(new ApiResponse<List<GetNotificationDto>>(
+                    true,"List of All Notifications",notifications,null    
+                ));
             }
             catch (Exception ex) { 
-                return StatusCode(500,ex.Message);
+                return StatusCode(500,new ApiResponse<object>(
+                    false,ex.Message,null,null    
+                ));
             }
             
         }
@@ -42,13 +45,19 @@ namespace office_automation_system.Api.Controllers.Admin.Notification
             {
                 var notification = await _NotificationGenericService.GetByIdAsync(id);
                 if (notification == null)
-                    return NotFound();
+                    return NotFound(new ApiResponse<object>(
+                        false,"Notification Not Found",null,null    
+                    ));
 
-                return Ok(notification);
+                return Ok(new ApiResponse<GetNotificationDto>(
+                    true,"Notification received successfully",notification,null    
+                ));
             }
             catch (Exception ex) { 
             
-                return StatusCode(500, ex.Message);
+                return StatusCode(500, new ApiResponse<object>(
+                    false,ex.Message,null,null    
+                ));
             }
             
         }
@@ -64,10 +73,14 @@ namespace office_automation_system.Api.Controllers.Admin.Notification
                 var result = await _NotificationGenericService.FindAsync(p => p.IsDeleted == false &&
                 (dto.Title == null || p.Title.Contains(dto.Title)) &&
                 (dto.UserId == null || p.UserId == dto.UserId));
-                return Ok(result);
+                return Ok(new ApiResponse<List<GetNotificationDto>>(
+                    true,"List of Searched Notifications",result,null    
+                ));
             }
             catch (Exception ex) {
-                return StatusCode(500, ex.Message);
+                return StatusCode(500, new ApiResponse<object>(
+                    false,ex.Message,null, null    
+                ));
             }
             
         }
@@ -80,12 +93,20 @@ namespace office_automation_system.Api.Controllers.Admin.Notification
             {
                 var result = await _NotificationGenericService.CreateAsync(dto);
                 if (!result.IsSuccess)
-                    return BadRequest(result.Errors);
+                    return BadRequest(new ApiResponse<object>(
+                        false,null,null,result.Errors
+                            
+                    ));
 
-                return Ok("Notification created successfully.");
+                return Ok(new ApiResponse<object>(
+                    true,"Notification Created Successfully",null,null    
+                ));
             }
             catch (Exception ex) {
-                return StatusCode(500, ex.Message);
+                return StatusCode(500, new ApiResponse<object>(
+                    
+                    false,ex.Message,null,null      
+                ));
             }
             
         }
@@ -97,12 +118,18 @@ namespace office_automation_system.Api.Controllers.Admin.Notification
             {
                 var result = await _NotificationGenericService.EditAsync(id, dto);
                 if (!result.IsSuccess)
-                    return BadRequest(result.Errors);
+                    return BadRequest(new ApiResponse<object>(
+                        false,null,null,result.Errors    
+                    ));
 
-                return Ok("Notification updated successfully.");
+                return Ok(new ApiResponse<object>(
+                    true,"Notification Updated Successfully",null,null    
+                ));
             }
             catch (Exception ex) {
-                return StatusCode(500, ex.Message);
+                return StatusCode(500, new ApiResponse<object>(
+                    false,ex.Message,null,null    
+                ));
             }
             
         }
@@ -127,12 +154,18 @@ namespace office_automation_system.Api.Controllers.Admin.Notification
             {
                 var success = await _NotificationGenericService.SoftDeleteAsync(id);
                 if (!success)
-                    return NotFound();
+                    return NotFound(new ApiResponse<object>(
+                        false,"Notification Not Found",null,null    
+                    ));
 
-                return Ok("Notification soft-deleted successfully.");
+                return Ok(new ApiResponse<object>(
+                    true,"Notification soft deleted Successfully",null,null    
+                ));
             }
             catch (Exception ex) {
-                return StatusCode(500, ex.Message);
+                return StatusCode(500, new ApiResponse<object>(
+                    false,ex.Message,null,null    
+                ));
             }
             
         }

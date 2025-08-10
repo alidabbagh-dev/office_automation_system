@@ -14,6 +14,7 @@ using System.Text;
 using System.Threading.Tasks;
 using FluentValidation;
 using FluentValidation.Results;
+using office_automation_system.application.Validator.Role;
 namespace office_automation_system.Infrastructure.Services.ApplicationUser
 {
     public class ApplicationUserGenericService : IApplicationUserGenericService
@@ -23,17 +24,20 @@ namespace office_automation_system.Infrastructure.Services.ApplicationUser
         private readonly IMapper _mapper;
         private readonly CreateApplicationUserDtoValidator _createValidator;
         private readonly EditApplicationUserDtoValidator _editValidator;
+        private readonly AssignRoleDtoValidator _assignRoleValidator;
 
         public ApplicationUserGenericService(IMapper mapper,UserManager<office_automation_system.domain.Entities.ApplicationUser> userManager,
                                      RoleManager<IdentityRole<Guid>> roleManager,
                                      EditApplicationUserDtoValidator editValidator,
-                                     CreateApplicationUserDtoValidator createValidator)
+                                     CreateApplicationUserDtoValidator createValidator,
+                                     AssignRoleDtoValidator assignRoleValidator)
         {
             _userManager = userManager;
             _roleManager = roleManager;
             _mapper = mapper;
             _editValidator = editValidator;
             _createValidator = createValidator;
+            _assignRoleValidator = assignRoleValidator;
         }
 
         public async Task<List<GetApplicationUserDto>> GetAllUsersAsync()
@@ -209,10 +213,20 @@ namespace office_automation_system.Infrastructure.Services.ApplicationUser
             return result.Succeeded;
         }
 
-        public async Task<bool> AssignRoleToUserAsync(AssignRoleDto dto)
+        public async Task<(bool Success,List<string> Errors)> AssignRoleToUserAsync(AssignRoleDto dto)
         {
+            FluentValidation.Results.ValidationResult validation = await _assignRoleValidator.ValidateAsync(dto);
+
+            if (!validation.IsValid)
+            {
+                var errorList = validation.Errors
+                    .Select(e => $"{e.PropertyName}: {e.ErrorMessage}")
+                    .ToList();
+
+                return (false, errorList);
+            }
             var user = await _userManager.FindByIdAsync(dto?.UserId.ToString());
-            if (user == null) return false;
+            if (user == null) return (false,["User Not Found"]);
 
             var existingRoles = await _userManager.GetRolesAsync(user);
             if (existingRoles.Any())
@@ -221,10 +235,10 @@ namespace office_automation_system.Infrastructure.Services.ApplicationUser
             }
 
             var role = await _roleManager.FindByIdAsync(dto?.RoleId.ToString());
-            if (role == null) return false;
+            if (role == null) return (false,["Role Not Found"]) ;
 
             var result = await _userManager.AddToRoleAsync(user, role.Name!);
-            return result.Succeeded;
+            return (result.Succeeded,[]) ;
         }
     }
 

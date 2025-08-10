@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using office_automation_system.application.Contracts.Services.Auth;
 using office_automation_system.application.Dto.Auth;
+using office_automation_system.application.Wrapper;
 using System.Security.Claims;
 
 namespace office_automation_system.Api.Controllers.Auth
@@ -27,12 +28,18 @@ namespace office_automation_system.Api.Controllers.Auth
                 var result = await _authService.RegisterAsync(dto);
                 if (result?.errors != null)
                 {
-                    return BadRequest(result.errors);
+                    return BadRequest(new ApiResponse<object>(
+                          false,null,null,result.errors
+                    ));
                 }
-                return Ok(result);
+                return Ok(new ApiResponse<AuthResponseDto>(
+                    true,"user registered successfully",result,null    
+                ));
             }
             catch (Exception ex) { 
-                return StatusCode(500, ex.Message);
+                return StatusCode(500, new ApiResponse<object>(
+                    false,ex.Message,null,null    
+                ));
             }
             
         }
@@ -43,11 +50,17 @@ namespace office_automation_system.Api.Controllers.Auth
             try
             {
                 var result = await _authService.LoginAsync(dto);
-                if (result?.errors != null) return Unauthorized(result?.errors);
-                return Ok(result);
+                if (result?.errors != null) return Unauthorized(new ApiResponse<object>(
+                    false,"could not login",null,result?.errors    
+                ));
+                return Ok(new ApiResponse<AuthResponseDto>(
+                    true,"user logged in successfully",result, null    
+                ));
             }
             catch (Exception ex) {
-                return StatusCode(500, ex.Message);
+                return StatusCode(500, new ApiResponse<object>(
+                    false,ex.Message,null,null    
+                ));
             }
             
         }
@@ -58,11 +71,17 @@ namespace office_automation_system.Api.Controllers.Auth
             try
             {
                 var result = await _authService.RefreshTokenAsync(refreshTokenDto.RefreshToken);
-                if (result == null) return Unauthorized("Refresh token is invalid or expired");
-                return Ok(result);
+                if (result == null) return Unauthorized(new ApiResponse<object>(
+                    false,"Token Is Invalid or expired", null, ["Token is invalid or expired"]    
+                ));
+                return Ok(new ApiResponse<AuthResponseDto>(
+                    true,"new Refresh token",result,null    
+                ));
             }
             catch (Exception ex) { 
-                return StatusCode(500,ex.Message);
+                return StatusCode(500,new ApiResponse<object>(
+                    false, ex.Message,null,null    
+                ));
             }
             
         }
@@ -74,15 +93,23 @@ namespace office_automation_system.Api.Controllers.Auth
             try
             {
                 var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-                if (userId == null) return Unauthorized();
+                if (userId == null) return Unauthorized(new ApiResponse<object>(
+                    false,"You can not loggout", null, ["You can not logout"]    
+                ));
 
                 var result = await _authService.LogoutAsync(userId);
-                if (!result) return BadRequest("Logout failed");
+                if (!result) return BadRequest(new ApiResponse<object>(
+                    false,"Logout Failed", null, ["Logout Failed"]    
+                ));
 
-                return Ok("User logged out successfully");
+                return Ok(new ApiResponse<object>(
+                    true,"Logged out successfully",null,null    
+                ));
             }
             catch (Exception ex) {
-                return StatusCode(500, ex.Message);
+                return StatusCode(500, new ApiResponse<object>(
+                    false,ex.Message,null,null    
+                ));
             }
             
         }

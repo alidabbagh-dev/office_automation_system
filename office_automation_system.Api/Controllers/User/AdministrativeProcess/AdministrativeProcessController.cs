@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using office_automation_system.application.Contracts.Services.AdministrativeProcess;
 using office_automation_system.application.Dto.AdministrativeProcess;
-
+using office_automation_system.application.Wrapper;
 namespace office_automation_system.Api.Controllers.User.AdministrativeProcess
 {
     [Authorize]
@@ -25,10 +25,10 @@ namespace office_automation_system.Api.Controllers.User.AdministrativeProcess
             try
             {
                 var processes = await _AdministrativeProcessGenericProcessService.GetAllAsync();
-                return Ok(processes);
+                return Ok(new ApiResponse<List<GetAdministrativeProcessDto>>(true,"list of all processes",processes,null));
             }
             catch (Exception ex) { 
-                return StatusCode(500,ex.Message);
+                return StatusCode(500,new ApiResponse<object>(false,ex.Message,null,null));
             }
             
         }
@@ -41,12 +41,14 @@ namespace office_automation_system.Api.Controllers.User.AdministrativeProcess
             {
                 var process = await _AdministrativeProcessGenericProcessService.GetByIdAsync(id);
                 if (process == null)
-                    return NotFound();
+                    return NotFound(new ApiResponse<object>(false,"Process not found",null,null));
 
-                return Ok(process);
+                return Ok(new ApiResponse<GetAdministrativeProcessDto>(true, "process received successfully"
+                    ,process,null    
+                ));
             }
             catch (Exception ex) {
-                return StatusCode(500, ex.Message);
+                return StatusCode(500, new ApiResponse<object>(false,ex.Message,null,null));
             }
             
         }
@@ -60,10 +62,12 @@ namespace office_automation_system.Api.Controllers.User.AdministrativeProcess
             try
             {
                 var result = await _AdministrativeProcessGenericProcessService.FindAsync(p => p.Title.Contains(title));
-                return Ok(result);
+                return Ok(new ApiResponse<List<GetAdministrativeProcessDto>>(true,"List of searched processes",
+                    result,null    
+                ));
             }
             catch (Exception ex) {
-                return StatusCode(500, ex.Message);            
+                return StatusCode(500, new ApiResponse<object>(false,ex.Message,null,null));            
             }
             
         }

@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\office_automation_system.Api.props" />
-</Project>

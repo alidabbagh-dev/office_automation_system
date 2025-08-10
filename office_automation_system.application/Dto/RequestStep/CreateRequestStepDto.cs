@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using office_automation_system.application.Dto.ApplicationUser;
 using office_automation_system.application.Dto.Request;
 using System;
@@ -16,6 +17,7 @@ namespace office_automation_system.application.Dto.RequestStep
         public Guid? OwnerId { get; set; }
         public Guid? RoleId { get; set; }
         public CreateApplicationUserDto? Owner { get; set; }
+        public IdentityRole<Guid>? Role { get; set; }
         public int? Order { get; set; }
         public string? Title { get; set; }
         public string? Description { get; set; }

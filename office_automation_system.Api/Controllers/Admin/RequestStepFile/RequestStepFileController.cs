@@ -8,6 +8,7 @@ using office_automation_system.application.Contracts.Services.RequestStepFile;
 using office_automation_system.application.Dto.Request;
 using office_automation_system.application.Dto.RequestStep;
 using office_automation_system.application.Dto.RequestStepFile;
+using office_automation_system.application.Wrapper;
 using office_automation_system.domain.Enums;
 using office_automation_system.Infrastructure.Services.Request;
 using System.Security.Claims;
@@ -34,10 +35,14 @@ namespace office_automation_system.Api.Controllers.Admin.RequestStepFile
             try
             {
                 var result = await _RequestStepFileGenericService.GetAllAsync();
-                return Ok(result);
+                return Ok(new ApiResponse<List<GetRequestStepFileDto>>(
+                    true,"List of all request step files",result,null    
+                ));
             }
             catch (Exception ex) {
-                return StatusCode(500, ex.Message);
+                return StatusCode(500,new ApiResponse<object>(
+                    false,ex.Message,null,null    
+                ));
             }
 
         }
@@ -49,11 +54,17 @@ namespace office_automation_system.Api.Controllers.Admin.RequestStepFile
             {
                 var result = await _RequestStepFileGenericService.GetByIdAsync(id);
                 if (result == null)
-                    return NotFound("Request Step file not found");
-                return Ok(result);
+                    return NotFound(new ApiResponse<object>(
+                        false,"Request step file not found",null,null    
+                    ));
+                return Ok(new ApiResponse<GetRequestStepFileDto>(
+                    true,"Request step file received successfully",result,null    
+                ));
             }
             catch (Exception ex) {
-                return StatusCode(500, ex.Message);
+                return StatusCode(500,new ApiResponse<object>(
+                    false, ex.Message,null,null    
+                ));
             }
 
         }
@@ -71,10 +82,14 @@ namespace office_automation_system.Api.Controllers.Admin.RequestStepFile
                 (filter.RequestStepId == null || p.RequestStepId == filter.RequestStepId)
             );
 
-                return Ok(result);
+                return Ok(new ApiResponse<List<GetRequestStepFileDto>>(
+                    true,"list of searched request step files",result,null    
+                ));
             }
             catch (Exception ex) {
-                return StatusCode(500, ex.Message);
+                return StatusCode(500, new ApiResponse<object>(
+                    false,ex.Message,null,null    
+                ));
             }
 
         }
@@ -89,15 +104,21 @@ namespace office_automation_system.Api.Controllers.Admin.RequestStepFile
 
                 if (!result.IsSuccess)
                 {
-                    return BadRequest(result.Errors);
+                    return BadRequest(new ApiResponse<object>(
+                        false,null,null,result.Errors    
+                    ));
                 }
                 else
                 {
-                    return Ok("Attachment File Uploaded Successfully");
+                    return Ok(new ApiResponse<object>(
+                        true,"request step file created successfully",null,null    
+                    ));
                 }
             }
             catch (Exception ex) {
-                return StatusCode(500, ex.Message);
+                return StatusCode(500, new ApiResponse<object>(
+                    false, ex.Message,null,null    
+                ));
             }
 
         }
@@ -111,14 +132,20 @@ namespace office_automation_system.Api.Controllers.Admin.RequestStepFile
                 var success = await _RequestStepFileGenericService.SoftDeleteAsync(id);
                 if (!success)
                 {
-                    return BadRequest("Could not delete Request Step attachment File");
+                    return BadRequest(new ApiResponse<object>(
+                        false,"Could not soft delete request step file",null,null    
+                    ));
 
                 }
 
-                return Ok("Request Step Attachment file deleted successfully");
+                return Ok(new ApiResponse<object>(
+                    true,"Request step file soft deleted successfully",null,null    
+                ));
             }
             catch (Exception ex) {
-                return StatusCode(500, ex.Message);
+                return StatusCode(500, new ApiResponse<object>(
+                    false,ex.Message,null,null    
+                ));
             }
             
         }

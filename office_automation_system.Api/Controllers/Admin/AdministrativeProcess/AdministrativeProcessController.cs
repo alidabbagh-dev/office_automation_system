@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using office_automation_system.application.Contracts.Services.AdministrativeProcess;
 using office_automation_system.application.Dto.AdministrativeProcess;
+using office_automation_system.application.Wrapper;
 
 namespace office_automation_system.Api.Controllers.Admin.AdministrativeProcess
 {
@@ -26,10 +27,14 @@ namespace office_automation_system.Api.Controllers.Admin.AdministrativeProcess
             try
             {
                 var processes = await _AdministrativeProcessGenericProcessService.GetAllAsync();
-                return Ok(processes);
+                var apiResponse = new ApiResponse<List<GetAdministrativeProcessDto>>(
+                    true,"list of all processes", processes, null
+                );
+                return Ok(apiResponse);
             }
             catch (Exception ex) {
-                return StatusCode(500, ex.Message);
+                var apiResponse = new ApiResponse<object>(false,ex.Message,null,null);
+                return StatusCode(500, apiResponse);
             }
             
         }
@@ -42,12 +47,20 @@ namespace office_automation_system.Api.Controllers.Admin.AdministrativeProcess
             {
                 var process = await _AdministrativeProcessGenericProcessService.GetByIdAsync(id);
                 if (process == null)
-                    return NotFound();
+                {
+                    
+                    return NotFound(new ApiResponse<object>(false, "process not found", null, null));
+                }
 
-                return Ok(process);
+                
+                return Ok(new ApiResponse<GetAdministrativeProcessDto>(true,
+                    "process successfully received",
+                    process, null
+                ));
             }
             catch (Exception ex) {
-                return StatusCode(500, ex.Message);
+                
+                return StatusCode(500, new ApiResponse<object>(false, ex.Message, null, null));
             }
             
         }
@@ -61,10 +74,12 @@ namespace office_automation_system.Api.Controllers.Admin.AdministrativeProcess
             try
             {
                 var result = await _AdministrativeProcessGenericProcessService.FindAsync(p => p.Title.Contains(title));
-                return Ok(result);
+                var apiResponse = new ApiResponse<List<GetAdministrativeProcessDto>>(true,"list of searched processes",result,null);
+                return Ok(apiResponse);
             }
             catch (Exception ex) {
-                return StatusCode(500, ex.Message);
+                var apiResponse = new ApiResponse<object>(false,ex.Message,null,null); 
+                return StatusCode(500, apiResponse);
             }
             
         }
@@ -77,12 +92,16 @@ namespace office_automation_system.Api.Controllers.Admin.AdministrativeProcess
             {
                 var result = await _AdministrativeProcessGenericProcessService.CreateAsync(dto);
                 if (!result.IsSuccess)
-                    return BadRequest(result.Errors);
+                {
 
-                return Ok("Administrative Process created successfully.");
+                    return BadRequest(new ApiResponse<object>(false,null,null,result.Errors));
+                }
+                    
+
+                return Ok(new ApiResponse<object>(true,"process created successfully",null,null));
             }
             catch (Exception ex) {
-                return StatusCode(500, ex.Message);
+                return StatusCode(500, new ApiResponse<object>(false,ex.Message,null,null));
             }
             
         }
@@ -95,12 +114,12 @@ namespace office_automation_system.Api.Controllers.Admin.AdministrativeProcess
             {
                 var result = await _AdministrativeProcessGenericProcessService.EditAsync(id, dto);
                 if (!result.IsSuccess)
-                    return BadRequest(result.Errors);
+                    return BadRequest(new ApiResponse<object>(false,null,null,result.Errors));
 
-                return Ok("Administrative Process updated successfully.");
+                return Ok(new ApiResponse<object>(true,"Process Updated Successfully",null,null));
             }
             catch (Exception ex) {
-                return StatusCode(500, ex.Message);
+                return StatusCode(500, new ApiResponse<object>(false,ex.Message,null,null));
             }
             
         }
@@ -125,12 +144,12 @@ namespace office_automation_system.Api.Controllers.Admin.AdministrativeProcess
             {
                 var success = await _AdministrativeProcessGenericProcessService.SoftDeleteAsync(id);
                 if (!success)
-                    return NotFound();
+                    return NotFound(new ApiResponse<object>(false,"Process not found",null,null));
 
-                return Ok("Administrative Process soft-deleted successfully.");
+                return Ok(new ApiResponse<object>(true,"Process soft deleted successfully",null,null));
             }
             catch (Exception ex) {
-                return StatusCode(500, ex.Message);
+                return StatusCode(500, new ApiResponse<object>(false,ex.Message,null,null));
             
             }
             

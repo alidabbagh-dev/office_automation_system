@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using office_automation_system.application.Contracts.Services.Role;
 using office_automation_system.application.Dto.Role;
+using office_automation_system.application.Wrapper;
 
 namespace office_automation_system.Api.Controllers.Admin.Role
 {
@@ -26,12 +28,18 @@ namespace office_automation_system.Api.Controllers.Admin.Role
             {
                 var result = await _roleService.CreateAsync(dto);
                 if (!result.IsSuccess)
-                    return BadRequest(result.Errors);
+                    return BadRequest(new ApiResponse<object>(
+                        false,null,null,result.Errors    
+                    ));
 
-                return Ok("Role Created Successfully");
+                return Ok(new ApiResponse<object>(
+                    true,"Role created successfully",null,null    
+                ));
             }
             catch (Exception ex) { 
-                return StatusCode(500,ex.Message);
+                return StatusCode(500,new ApiResponse<object>(
+                    false,ex.Message,null,null    
+                ));
             }
             
         }
@@ -42,10 +50,14 @@ namespace office_automation_system.Api.Controllers.Admin.Role
             try
             {
                 var roles = await _roleService.GetAllAsync();
-                return Ok(new { roles });
+                return Ok(new ApiResponse<List<IdentityRole<Guid>>>(
+                       true,"list of roles",roles,null
+                ));
             }
             catch (Exception ex) { 
-                return StatusCode(500,ex.Message);
+                return StatusCode(500,new ApiResponse<object>(
+                    false, ex.Message,null,null    
+                ));
             }
             
         }

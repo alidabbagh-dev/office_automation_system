@@ -396,22 +396,6 @@
   },
   {
     "ContainingType": "office_automation_system.Api.Controllers.Admin.ProcessApprovalStep.ProcessApprovalStepController",
-    "Method": "Delete",
-    "RelativePath": "api/admin/ProcessApprovalStep/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "office_automation_system.Api.Controllers.Admin.ProcessApprovalStep.ProcessApprovalStepController",
     "Method": "Filter",
     "RelativePath": "api/admin/ProcessApprovalStep/filter/{AdministrativeProcessId}",
     "HttpMethod": "GET",
@@ -473,22 +457,6 @@
     "Method": "GetById",
     "RelativePath": "api/admin/Request/{id}",
     "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "office_automation_system.Api.Controllers.Admin.Request.RequestController",
-    "Method": "Delete",
-    "RelativePath": "api/admin/Request/{id}",
-    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -803,6 +771,26 @@
       },
       {
         "Name": "RequestStep.Owner.UserCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "RequestStep.Role.Id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "RequestStep.Role.Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "RequestStep.Role.NormalizedName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "RequestStep.Role.ConcurrencyStamp",
         "Type": "System.String",
         "IsRequired": false
       },
@@ -1157,22 +1145,6 @@
   },
   {
     "ContainingType": "office_automation_system.Api.Controllers.User.Request.RequestController",
-    "Method": "Delete",
-    "RelativePath": "api/user/Request/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "office_automation_system.Api.Controllers.User.Request.RequestController",
     "Method": "Filter",
     "RelativePath": "api/user/Request/filter",
     "HttpMethod": "GET",
@@ -1464,6 +1436,26 @@
       },
       {
         "Name": "RequestStep.Owner.UserCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "RequestStep.Role.Id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "RequestStep.Role.Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "RequestStep.Role.NormalizedName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "RequestStep.Role.ConcurrencyStamp",
         "Type": "System.String",
         "IsRequired": false
       },
