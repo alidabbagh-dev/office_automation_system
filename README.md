@@ -1,1 +1,1 @@
-A WorkFlow System Which allows Defining WorkFlow Steps and Assigning Each Step to Specific User Or Role.
+A WorkFlow System Which Allows Defining WorkFlow Steps And Assigning Each Step To Specific User Or Role.
