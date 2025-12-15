@@ -1,6 +1,6 @@
 # office_automation_system
 
-A role-based workflow management system implemented using .NET.
+A role-based workflow management system implemented using ASP.NET Core.
 
 ## Overview
 office_automation_system is designed to manage organizational processes through configurable workflows. Administrators can define users, roles, and multi-step processes, enabling requests to circulate between users or roles until completion or rejection.
